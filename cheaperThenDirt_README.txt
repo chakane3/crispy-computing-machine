@@ -25,32 +25,6 @@ First we get the links of each caliber available using "scrape_handguns(url)"
 
 
 
-
-
-
-
-        What we want overall is a dataframe with calibers and another DF where the product list is 
-
-         1.)
-         _________________________________________________                      ___________________________________________________________
-        |  caliber number |  dataFrame for that caliber        ------------>   |  types of calibers    |    dataFrame of that product list
-        |       1         |        DF                                          |         10mm          |              DF
-        |       2         |        DF                                          |           ...         |                
-        |       3         |        DF                                          |                       |
-        |       4         |        DF                                          |                       |
-         __________________________________________________                     ___________________________________________________________  
-
-
-        2.)
-         _________________________________________________                      _________________________________________________
-        |      name       |      price                         ------------>   |  types of calibers    |  
-        |      ...        |       $$$                                          |         10mm          | 
-        |      ...        |       $$$                                          |           ...         | 
-        |      ...        |       $$$                                          |                       |
-        |      ...        |       $$$                                          |                       |
-         __________________________________________________                     _________________________________________________    
-
-
         crispy-computing-machine
             jsonFiles
                 cheaperThanDirt
@@ -68,4 +42,4 @@ First we get the links of each caliber available using "scrape_handguns(url)"
                             caliber
                                 .
 
-    
+D'Addario nickel wound reg light guage
