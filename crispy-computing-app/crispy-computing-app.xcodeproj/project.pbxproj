@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94E8AD8126F2E097009478C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD8026F2E097009478C2 /* AppDelegate.swift */; };
+		94E8AD8326F2E097009478C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD8226F2E097009478C2 /* SceneDelegate.swift */; };
+		94E8AD8526F2E097009478C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD8426F2E097009478C2 /* ViewController.swift */; };
+		94E8AD8826F2E097009478C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E8AD8626F2E097009478C2 /* Main.storyboard */; };
+		94E8AD8A26F2E099009478C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E8AD8926F2E099009478C2 /* Assets.xcassets */; };
+		94E8AD8D26F2E099009478C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E8AD8B26F2E099009478C2 /* LaunchScreen.storyboard */; };
+		94E8AD9826F2E099009478C2 /* crispy_computing_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD9726F2E099009478C2 /* crispy_computing_appTests.swift */; };
+		94E8ADA326F2E099009478C2 /* crispy_computing_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8ADA226F2E099009478C2 /* crispy_computing_appUITests.swift */; };
+		94E8ADB526F2E49E009478C2 /* CTDShotgunAmmo0.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADB426F2E49E009478C2 /* CTDShotgunAmmo0.json */; };
+		94E8ADB726F2E4BA009478C2 /* CTDShotgunAmmo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADB626F2E4BA009478C2 /* CTDShotgunAmmo1.json */; };
+		94E8ADB926F2E4D8009478C2 /* CTDShotgunAmmo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADB826F2E4D8009478C2 /* CTDShotgunAmmo2.json */; };
+		94E8ADBB26F2E4FA009478C2 /* CTDShotgunAmmo4.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADBA26F2E4FA009478C2 /* CTDShotgunAmmo4.json */; };
+		94E8ADBD26F2E50B009478C2 /* CTDShotgunAmmo5.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADBC26F2E50B009478C2 /* CTDShotgunAmmo5.json */; };
+		94E8ADC226F2E739009478C2 /* CTDRifleAmmo0.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADC126F2E739009478C2 /* CTDRifleAmmo0.json */; };
+		94E8ADC426F2E749009478C2 /* CTDRifleAmmo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADC326F2E749009478C2 /* CTDRifleAmmo1.json */; };
+		94E8ADC626F2E759009478C2 /* CTDRifleAmmo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADC526F2E759009478C2 /* CTDRifleAmmo2.json */; };
+		94E8ADC826F2E766009478C2 /* CTDRifleAmmo3.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADC726F2E766009478C2 /* CTDRifleAmmo3.json */; };
+		94E8ADCA26F2E779009478C2 /* CTDRifleAmmo4.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADC926F2E779009478C2 /* CTDRifleAmmo4.json */; };
+		94E8ADCC26F2E793009478C2 /* CTDRifleAmmo5.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADCB26F2E793009478C2 /* CTDRifleAmmo5.json */; };
+		94E8ADCE26F2E79F009478C2 /* CTDRifleAmmo6.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADCD26F2E79F009478C2 /* CTDRifleAmmo6.json */; };
+		94E8ADD026F2E7AA009478C2 /* CTDRifleAmmo7.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADCF26F2E7AA009478C2 /* CTDRifleAmmo7.json */; };
+		94E8ADD226F2E8C6009478C2 /* CTDHandgunAmmo0.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADD126F2E8C6009478C2 /* CTDHandgunAmmo0.json */; };
+		94E8ADD426F2E8DA009478C2 /* CTDHandgunAmmo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADD326F2E8DA009478C2 /* CTDHandgunAmmo1.json */; };
+		94E8ADD626F2E8E8009478C2 /* CTDHandgunAmmo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADD526F2E8E8009478C2 /* CTDHandgunAmmo2.json */; };
+		94E8ADD826F2E8F9009478C2 /* CTDHandgunAmmo3.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADD726F2E8F9009478C2 /* CTDHandgunAmmo3.json */; };
+		94E8ADDA26F2E914009478C2 /* CTDHandgunAmmo4.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADD926F2E914009478C2 /* CTDHandgunAmmo4.json */; };
+		94E8ADDC26F2E923009478C2 /* CTDHandgunAmmo5.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADDB26F2E923009478C2 /* CTDHandgunAmmo5.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94E8AD9426F2E099009478C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94E8AD7526F2E097009478C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94E8AD7C26F2E097009478C2;
+			remoteInfo = "crispy-computing-app";
+		};
+		94E8AD9F26F2E099009478C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94E8AD7526F2E097009478C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94E8AD7C26F2E097009478C2;
+			remoteInfo = "crispy-computing-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94E8AD7D26F2E097009478C2 /* crispy-computing-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crispy-computing-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E8AD8026F2E097009478C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94E8AD8226F2E097009478C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		94E8AD8426F2E097009478C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94E8AD8726F2E097009478C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94E8AD8926F2E099009478C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94E8AD8C26F2E099009478C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94E8AD8E26F2E099009478C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E8AD9326F2E099009478C2 /* crispy-computing-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crispy-computing-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E8AD9726F2E099009478C2 /* crispy_computing_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crispy_computing_appTests.swift; sourceTree = "<group>"; };
+		94E8AD9926F2E099009478C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E8AD9E26F2E099009478C2 /* crispy-computing-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crispy-computing-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E8ADA226F2E099009478C2 /* crispy_computing_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crispy_computing_appUITests.swift; sourceTree = "<group>"; };
+		94E8ADA426F2E099009478C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E8ADB426F2E49E009478C2 /* CTDShotgunAmmo0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo0.json; sourceTree = "<group>"; };
+		94E8ADB626F2E4BA009478C2 /* CTDShotgunAmmo1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo1.json; sourceTree = "<group>"; };
+		94E8ADB826F2E4D8009478C2 /* CTDShotgunAmmo2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo2.json; sourceTree = "<group>"; };
+		94E8ADBA26F2E4FA009478C2 /* CTDShotgunAmmo4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo4.json; sourceTree = "<group>"; };
+		94E8ADBC26F2E50B009478C2 /* CTDShotgunAmmo5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo5.json; sourceTree = "<group>"; };
+		94E8ADC126F2E739009478C2 /* CTDRifleAmmo0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo0.json; sourceTree = "<group>"; };
+		94E8ADC326F2E749009478C2 /* CTDRifleAmmo1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo1.json; sourceTree = "<group>"; };
+		94E8ADC526F2E759009478C2 /* CTDRifleAmmo2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo2.json; sourceTree = "<group>"; };
+		94E8ADC726F2E766009478C2 /* CTDRifleAmmo3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo3.json; sourceTree = "<group>"; };
+		94E8ADC926F2E779009478C2 /* CTDRifleAmmo4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo4.json; sourceTree = "<group>"; };
+		94E8ADCB26F2E793009478C2 /* CTDRifleAmmo5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo5.json; sourceTree = "<group>"; };
+		94E8ADCD26F2E79F009478C2 /* CTDRifleAmmo6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo6.json; sourceTree = "<group>"; };
+		94E8ADCF26F2E7AA009478C2 /* CTDRifleAmmo7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo7.json; sourceTree = "<group>"; };
+		94E8ADD126F2E8C6009478C2 /* CTDHandgunAmmo0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo0.json; sourceTree = "<group>"; };
+		94E8ADD326F2E8DA009478C2 /* CTDHandgunAmmo1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo1.json; sourceTree = "<group>"; };
+		94E8ADD526F2E8E8009478C2 /* CTDHandgunAmmo2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo2.json; sourceTree = "<group>"; };
+		94E8ADD726F2E8F9009478C2 /* CTDHandgunAmmo3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo3.json; sourceTree = "<group>"; };
+		94E8ADD926F2E914009478C2 /* CTDHandgunAmmo4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo4.json; sourceTree = "<group>"; };
+		94E8ADDB26F2E923009478C2 /* CTDHandgunAmmo5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo5.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94E8AD7A26F2E097009478C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E8AD9026F2E099009478C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E8AD9B26F2E099009478C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94E8AD7426F2E097009478C2 = {
+			isa = PBXGroup;
+			children = (
+				94E8AD7F26F2E097009478C2 /* crispy-computing-app */,
+				94E8AD9626F2E099009478C2 /* crispy-computing-appTests */,
+				94E8ADA126F2E099009478C2 /* crispy-computing-appUITests */,
+				94E8AD7E26F2E097009478C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94E8AD7E26F2E097009478C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94E8AD7D26F2E097009478C2 /* crispy-computing-app.app */,
+				94E8AD9326F2E099009478C2 /* crispy-computing-appTests.xctest */,
+				94E8AD9E26F2E099009478C2 /* crispy-computing-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94E8AD7F26F2E097009478C2 /* crispy-computing-app */ = {
+			isa = PBXGroup;
+			children = (
+				94E8ADB026F2E134009478C2 /* jsonFiles */,
+				94E8AD8026F2E097009478C2 /* AppDelegate.swift */,
+				94E8AD8226F2E097009478C2 /* SceneDelegate.swift */,
+				94E8AD8426F2E097009478C2 /* ViewController.swift */,
+				94E8AD8626F2E097009478C2 /* Main.storyboard */,
+				94E8AD8926F2E099009478C2 /* Assets.xcassets */,
+				94E8AD8B26F2E099009478C2 /* LaunchScreen.storyboard */,
+				94E8AD8E26F2E099009478C2 /* Info.plist */,
+			);
+			path = "crispy-computing-app";
+			sourceTree = "<group>";
+		};
+		94E8AD9626F2E099009478C2 /* crispy-computing-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				94E8AD9726F2E099009478C2 /* crispy_computing_appTests.swift */,
+				94E8AD9926F2E099009478C2 /* Info.plist */,
+			);
+			path = "crispy-computing-appTests";
+			sourceTree = "<group>";
+		};
+		94E8ADA126F2E099009478C2 /* crispy-computing-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94E8ADA226F2E099009478C2 /* crispy_computing_appUITests.swift */,
+				94E8ADA426F2E099009478C2 /* Info.plist */,
+			);
+			path = "crispy-computing-appUITests";
+			sourceTree = "<group>";
+		};
+		94E8ADB026F2E134009478C2 /* jsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				94E8ADC026F2E52C009478C2 /* handgun */,
+				94E8ADBF26F2E525009478C2 /* rifle */,
+				94E8ADBE26F2E510009478C2 /* shotgun */,
+			);
+			name = jsonFiles;
+			path = "crispy-computing-app/jsonFiles";
+			sourceTree = SOURCE_ROOT;
+		};
+		94E8ADBE26F2E510009478C2 /* shotgun */ = {
+			isa = PBXGroup;
+			children = (
+				94E8ADB426F2E49E009478C2 /* CTDShotgunAmmo0.json */,
+				94E8ADB626F2E4BA009478C2 /* CTDShotgunAmmo1.json */,
+				94E8ADB826F2E4D8009478C2 /* CTDShotgunAmmo2.json */,
+				94E8ADBA26F2E4FA009478C2 /* CTDShotgunAmmo4.json */,
+				94E8ADBC26F2E50B009478C2 /* CTDShotgunAmmo5.json */,
+			);
+			path = shotgun;
+			sourceTree = "<group>";
+		};
+		94E8ADBF26F2E525009478C2 /* rifle */ = {
+			isa = PBXGroup;
+			children = (
+				94E8ADC126F2E739009478C2 /* CTDRifleAmmo0.json */,
+				94E8ADC326F2E749009478C2 /* CTDRifleAmmo1.json */,
+				94E8ADC526F2E759009478C2 /* CTDRifleAmmo2.json */,
+				94E8ADC726F2E766009478C2 /* CTDRifleAmmo3.json */,
+				94E8ADC926F2E779009478C2 /* CTDRifleAmmo4.json */,
+				94E8ADCB26F2E793009478C2 /* CTDRifleAmmo5.json */,
+				94E8ADCD26F2E79F009478C2 /* CTDRifleAmmo6.json */,
+				94E8ADCF26F2E7AA009478C2 /* CTDRifleAmmo7.json */,
+			);
+			path = rifle;
+			sourceTree = "<group>";
+		};
+		94E8ADC026F2E52C009478C2 /* handgun */ = {
+			isa = PBXGroup;
+			children = (
+				94E8ADD126F2E8C6009478C2 /* CTDHandgunAmmo0.json */,
+				94E8ADD326F2E8DA009478C2 /* CTDHandgunAmmo1.json */,
+				94E8ADD526F2E8E8009478C2 /* CTDHandgunAmmo2.json */,
+				94E8ADD726F2E8F9009478C2 /* CTDHandgunAmmo3.json */,
+				94E8ADD926F2E914009478C2 /* CTDHandgunAmmo4.json */,
+				94E8ADDB26F2E923009478C2 /* CTDHandgunAmmo5.json */,
+			);
+			path = handgun;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94E8AD7C26F2E097009478C2 /* crispy-computing-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94E8ADA726F2E099009478C2 /* Build configuration list for PBXNativeTarget "crispy-computing-app" */;
+			buildPhases = (
+				94E8AD7926F2E097009478C2 /* Sources */,
+				94E8AD7A26F2E097009478C2 /* Frameworks */,
+				94E8AD7B26F2E097009478C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "crispy-computing-app";
+			productName = "crispy-computing-app";
+			productReference = 94E8AD7D26F2E097009478C2 /* crispy-computing-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94E8AD9226F2E099009478C2 /* crispy-computing-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94E8ADAA26F2E099009478C2 /* Build configuration list for PBXNativeTarget "crispy-computing-appTests" */;
+			buildPhases = (
+				94E8AD8F26F2E099009478C2 /* Sources */,
+				94E8AD9026F2E099009478C2 /* Frameworks */,
+				94E8AD9126F2E099009478C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94E8AD9526F2E099009478C2 /* PBXTargetDependency */,
+			);
+			name = "crispy-computing-appTests";
+			productName = "crispy-computing-appTests";
+			productReference = 94E8AD9326F2E099009478C2 /* crispy-computing-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94E8AD9D26F2E099009478C2 /* crispy-computing-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94E8ADAD26F2E099009478C2 /* Build configuration list for PBXNativeTarget "crispy-computing-appUITests" */;
+			buildPhases = (
+				94E8AD9A26F2E099009478C2 /* Sources */,
+				94E8AD9B26F2E099009478C2 /* Frameworks */,
+				94E8AD9C26F2E099009478C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94E8ADA026F2E099009478C2 /* PBXTargetDependency */,
+			);
+			name = "crispy-computing-appUITests";
+			productName = "crispy-computing-appUITests";
+			productReference = 94E8AD9E26F2E099009478C2 /* crispy-computing-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94E8AD7526F2E097009478C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					94E8AD7C26F2E097009478C2 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					94E8AD9226F2E099009478C2 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 94E8AD7C26F2E097009478C2;
+					};
+					94E8AD9D26F2E099009478C2 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 94E8AD7C26F2E097009478C2;
+					};
+				};
+			};
+			buildConfigurationList = 94E8AD7826F2E097009478C2 /* Build configuration list for PBXProject "crispy-computing-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94E8AD7426F2E097009478C2;
+			productRefGroup = 94E8AD7E26F2E097009478C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94E8AD7C26F2E097009478C2 /* crispy-computing-app */,
+				94E8AD9226F2E099009478C2 /* crispy-computing-appTests */,
+				94E8AD9D26F2E099009478C2 /* crispy-computing-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94E8AD7B26F2E097009478C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E8ADC426F2E749009478C2 /* CTDRifleAmmo1.json in Resources */,
+				94E8AD8D26F2E099009478C2 /* LaunchScreen.storyboard in Resources */,
+				94E8ADBB26F2E4FA009478C2 /* CTDShotgunAmmo4.json in Resources */,
+				94E8ADB526F2E49E009478C2 /* CTDShotgunAmmo0.json in Resources */,
+				94E8ADC826F2E766009478C2 /* CTDRifleAmmo3.json in Resources */,
+				94E8ADD826F2E8F9009478C2 /* CTDHandgunAmmo3.json in Resources */,
+				94E8ADC626F2E759009478C2 /* CTDRifleAmmo2.json in Resources */,
+				94E8AD8A26F2E099009478C2 /* Assets.xcassets in Resources */,
+				94E8ADC226F2E739009478C2 /* CTDRifleAmmo0.json in Resources */,
+				94E8ADD226F2E8C6009478C2 /* CTDHandgunAmmo0.json in Resources */,
+				94E8ADD626F2E8E8009478C2 /* CTDHandgunAmmo2.json in Resources */,
+				94E8ADDC26F2E923009478C2 /* CTDHandgunAmmo5.json in Resources */,
+				94E8ADD026F2E7AA009478C2 /* CTDRifleAmmo7.json in Resources */,
+				94E8ADB926F2E4D8009478C2 /* CTDShotgunAmmo2.json in Resources */,
+				94E8ADCA26F2E779009478C2 /* CTDRifleAmmo4.json in Resources */,
+				94E8ADDA26F2E914009478C2 /* CTDHandgunAmmo4.json in Resources */,
+				94E8ADCE26F2E79F009478C2 /* CTDRifleAmmo6.json in Resources */,
+				94E8ADCC26F2E793009478C2 /* CTDRifleAmmo5.json in Resources */,
+				94E8AD8826F2E097009478C2 /* Main.storyboard in Resources */,
+				94E8ADBD26F2E50B009478C2 /* CTDShotgunAmmo5.json in Resources */,
+				94E8ADB726F2E4BA009478C2 /* CTDShotgunAmmo1.json in Resources */,
+				94E8ADD426F2E8DA009478C2 /* CTDHandgunAmmo1.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E8AD9126F2E099009478C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E8AD9C26F2E099009478C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94E8AD7926F2E097009478C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E8AD8526F2E097009478C2 /* ViewController.swift in Sources */,
+				94E8AD8126F2E097009478C2 /* AppDelegate.swift in Sources */,
+				94E8AD8326F2E097009478C2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E8AD8F26F2E099009478C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E8AD9826F2E099009478C2 /* crispy_computing_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E8AD9A26F2E099009478C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E8ADA326F2E099009478C2 /* crispy_computing_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94E8AD9526F2E099009478C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94E8AD7C26F2E097009478C2 /* crispy-computing-app */;
+			targetProxy = 94E8AD9426F2E099009478C2 /* PBXContainerItemProxy */;
+		};
+		94E8ADA026F2E099009478C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94E8AD7C26F2E097009478C2 /* crispy-computing-app */;
+			targetProxy = 94E8AD9F26F2E099009478C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94E8AD8626F2E097009478C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94E8AD8726F2E097009478C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94E8AD8B26F2E099009478C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94E8AD8C26F2E099009478C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94E8ADA526F2E099009478C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94E8ADA626F2E099009478C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94E8ADA826F2E099009478C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				INFOPLIST_FILE = "crispy-computing-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.crispy-computing-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94E8ADA926F2E099009478C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				INFOPLIST_FILE = "crispy-computing-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.crispy-computing-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94E8ADAB26F2E099009478C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				INFOPLIST_FILE = "crispy-computing-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.crispy-computing-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crispy-computing-app.app/crispy-computing-app";
+			};
+			name = Debug;
+		};
+		94E8ADAC26F2E099009478C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				INFOPLIST_FILE = "crispy-computing-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.crispy-computing-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crispy-computing-app.app/crispy-computing-app";
+			};
+			name = Release;
+		};
+		94E8ADAE26F2E099009478C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				INFOPLIST_FILE = "crispy-computing-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.crispy-computing-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "crispy-computing-app";
+			};
+			name = Debug;
+		};
+		94E8ADAF26F2E099009478C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				INFOPLIST_FILE = "crispy-computing-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.crispy-computing-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "crispy-computing-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94E8AD7826F2E097009478C2 /* Build configuration list for PBXProject "crispy-computing-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E8ADA526F2E099009478C2 /* Debug */,
+				94E8ADA626F2E099009478C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94E8ADA726F2E099009478C2 /* Build configuration list for PBXNativeTarget "crispy-computing-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E8ADA826F2E099009478C2 /* Debug */,
+				94E8ADA926F2E099009478C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94E8ADAA26F2E099009478C2 /* Build configuration list for PBXNativeTarget "crispy-computing-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E8ADAB26F2E099009478C2 /* Debug */,
+				94E8ADAC26F2E099009478C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94E8ADAD26F2E099009478C2 /* Build configuration list for PBXNativeTarget "crispy-computing-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E8ADAE26F2E099009478C2 /* Debug */,
+				94E8ADAF26F2E099009478C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94E8AD7526F2E097009478C2 /* Project object */;
+}
