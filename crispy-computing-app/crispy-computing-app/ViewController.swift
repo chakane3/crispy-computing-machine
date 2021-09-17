@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        dump(webData.getProducts())
+        
         // Do any additional setup after loading the view.
     }
 
