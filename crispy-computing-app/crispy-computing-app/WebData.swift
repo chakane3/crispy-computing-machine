@@ -7,29 +7,24 @@
 
 import Foundation
 
+
 struct webData: Codable {
-    let data: [ammo]
-}
-
-struct ammo: Codable {
     let caliber: String
-//    var name =  [String]()
-//    var price = [String]()
-//    var link =  [String]()
 }
-
 
 extension webData {
-    static func getProducts() -> [ammo] {
-        var product = [ammo]()
-        guard let fileUrl = Bundle.main.url(forResource: "CTDHandgun12", withExtension: "json") else {
+    // this could be looped for all other json files
+    static func getProducts() -> String {
+        var product: String
+        guard let fileUrl = Bundle.main.url(forResource: "CTDHandgunAmmo12", withExtension: "json") else {
             fatalError("check json name, or if it exists")
         }
+        print("fileUrl: \(fileUrl)")
         
         do {
             let data = try Data(contentsOf: fileUrl)
-            let cData = try JSONDecoder().decode(webData.self, from: data)
-            product = cData.data
+            let productData = try JSONDecoder().decode(webData.self, from: data)
+            product = productData.caliber
         } catch {
             fatalError("data not found")
         }
