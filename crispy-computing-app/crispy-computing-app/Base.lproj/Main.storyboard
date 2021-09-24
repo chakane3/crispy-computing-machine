@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8nO-bu-caU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="productViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,43 +21,53 @@
                                 <rect key="frame" x="192" y="368" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="rifle"/>
+                                <connections>
+                                    <segue destination="RYP-cR-EsC" kind="show" id="aru-tk-qxJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6K-0F-gUj">
                                 <rect key="frame" x="53" y="368" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="handgun"/>
+                                <connections>
+                                    <segue destination="RYP-cR-EsC" kind="show" id="K5P-2j-UeP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iO-3z-t2W">
                                 <rect key="frame" x="308" y="368" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="shotgun"/>
+                                <connections>
+                                    <segue destination="RYP-cR-EsC" kind="show" id="8aw-jM-1EU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zkY-C7-zeN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="82"/>
+            <point key="canvasLocation" x="2667" y="-725"/>
         </scene>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="GJu-Kh-io0">
             <objects>
-                <viewController id="RYP-cR-EsC" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="RYP-cR-EsC" customClass="productViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DWi-Yp-i9u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kte-lJ-qiR">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AHc-zQ-wo2">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="product" rowHeight="156" id="kqh-pX-RMf">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="156"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="productCell" rowHeight="115" id="PQB-Uv-t10" customClass="custom">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kqh-pX-RMf" id="xte-lX-Kqh">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="156"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PQB-Uv-t10" id="rZ6-jr-75D" customClass="custom">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -66,37 +77,43 @@
                         <viewLayoutGuide key="safeArea" id="TYG-DA-RR0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kte-lJ-qiR" firstAttribute="top" secondItem="TYG-DA-RR0" secondAttribute="top" id="8IZ-Pk-7ji"/>
-                            <constraint firstItem="kte-lJ-qiR" firstAttribute="leading" secondItem="TYG-DA-RR0" secondAttribute="leading" id="PSG-Cl-thA"/>
-                            <constraint firstItem="kte-lJ-qiR" firstAttribute="bottom" secondItem="TYG-DA-RR0" secondAttribute="bottom" id="YfP-OZ-4M9"/>
-                            <constraint firstItem="kte-lJ-qiR" firstAttribute="trailing" secondItem="TYG-DA-RR0" secondAttribute="trailing" id="hqa-aV-Vh4"/>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="leading" secondItem="TYG-DA-RR0" secondAttribute="leading" id="dPg-QC-an6"/>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="top" secondItem="TYG-DA-RR0" secondAttribute="top" id="nMu-3B-gG9"/>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="bottom" secondItem="TYG-DA-RR0" secondAttribute="bottom" id="ox3-6d-7s8"/>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="trailing" secondItem="TYG-DA-RR0" secondAttribute="trailing" id="prj-Rg-P4D"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="527-n1-BQ9"/>
+                    <connections>
+                        <outlet property="tableView" destination="AHc-zQ-wo2" id="3Wu-KD-Qyf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxN-wU-cih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1798.5507246376812" y="81.696428571428569"/>
+            <point key="canvasLocation" x="3486.9565217391305" y="-725.22321428571422"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="cZh-eY-EZL">
+        <scene sceneID="8Zp-Sv-aba">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mDu-Es-3lD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8nO-bu-caU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ca3-07-xKP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="tXN-i3-QD8">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="RYP-cR-EsC" kind="relationship" relationship="rootViewController" id="MaD-If-jTY"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="trp-sg-qlE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rgo-Zm-Tes" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bN-8T-CMh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886.95652173913049" y="81.696428571428569"/>
+            <point key="canvasLocation" x="1798.5507246376812" y="-725.22321428571422"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="8aw-jM-1EU"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

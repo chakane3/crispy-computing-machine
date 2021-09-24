@@ -7,87 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		944D56A426F3F47900C0B044 /* CTDRifleAmmo8.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56A326F3F47900C0B044 /* CTDRifleAmmo8.json */; };
-		944D56A626F3F48D00C0B044 /* CTDRifleAmmo9.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56A526F3F48D00C0B044 /* CTDRifleAmmo9.json */; };
-		944D56A826F3F4AC00C0B044 /* CTDRifleAmmo10.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56A726F3F4AC00C0B044 /* CTDRifleAmmo10.json */; };
-		944D56AA26F3F4C100C0B044 /* CTDRifleAmmo11.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56A926F3F4C100C0B044 /* CTDRifleAmmo11.json */; };
-		944D56AC26F3F4CC00C0B044 /* CTDRifleAmmo12.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56AB26F3F4CC00C0B044 /* CTDRifleAmmo12.json */; };
-		944D56AE26F3F4E700C0B044 /* CTDRifleAmmo13.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56AD26F3F4E700C0B044 /* CTDRifleAmmo13.json */; };
-		944D56B026F3F4F400C0B044 /* CTDRifleAmmo14.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56AF26F3F4F400C0B044 /* CTDRifleAmmo14.json */; };
-		944D56B226F3F4FC00C0B044 /* CTDRifleAmmo15.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56B126F3F4FC00C0B044 /* CTDRifleAmmo15.json */; };
-		944D56B426F3F50F00C0B044 /* CTDRifleAmmo16.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56B326F3F50F00C0B044 /* CTDRifleAmmo16.json */; };
-		944D56B626F3F52C00C0B044 /* CTDRifleAmmo17.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56B526F3F52C00C0B044 /* CTDRifleAmmo17.json */; };
-		944D56B826F3F53700C0B044 /* CTDRifleAmmo18.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56B726F3F53700C0B044 /* CTDRifleAmmo18.json */; };
-		944D56BA26F3F54600C0B044 /* CTDRifleAmmo19.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56B926F3F54600C0B044 /* CTDRifleAmmo19.json */; };
-		944D56BC26F3F54F00C0B044 /* CTDRifleAmmo20.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56BB26F3F54F00C0B044 /* CTDRifleAmmo20.json */; };
-		944D56BE26F3F55C00C0B044 /* CTDRifleAmmo21.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56BD26F3F55C00C0B044 /* CTDRifleAmmo21.json */; };
-		944D56C026F3F56500C0B044 /* CTDRifleAmmo22.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56BF26F3F56500C0B044 /* CTDRifleAmmo22.json */; };
-		944D56C226F3F56E00C0B044 /* CTDRifleAmmo23.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56C126F3F56E00C0B044 /* CTDRifleAmmo23.json */; };
-		944D56C426F3F57C00C0B044 /* CTDRifleAmmo24.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56C326F3F57C00C0B044 /* CTDRifleAmmo24.json */; };
-		944D56C626F3F58C00C0B044 /* CTDRifleAmmo25.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56C526F3F58C00C0B044 /* CTDRifleAmmo25.json */; };
-		944D56C826F3F59F00C0B044 /* CTDRifleAmmo26.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56C726F3F59F00C0B044 /* CTDRifleAmmo26.json */; };
-		944D56CA26F3F5AA00C0B044 /* CTDRifleAmmo27.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56C926F3F5AA00C0B044 /* CTDRifleAmmo27.json */; };
-		944D56CC26F3F5B400C0B044 /* CTDRifleAmmo28.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56CB26F3F5B400C0B044 /* CTDRifleAmmo28.json */; };
-		944D56CE26F3F5C700C0B044 /* CTDRifleAmmo29.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56CD26F3F5C700C0B044 /* CTDRifleAmmo29.json */; };
-		944D56D026F3F5DC00C0B044 /* CTDRifleAmmo30.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56CF26F3F5DC00C0B044 /* CTDRifleAmmo30.json */; };
-		944D56D226F3F5E800C0B044 /* CTDRifleAmmo31.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56D126F3F5E800C0B044 /* CTDRifleAmmo31.json */; };
-		944D56D426F3F5F300C0B044 /* CTDRifleAmmo32.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56D326F3F5F300C0B044 /* CTDRifleAmmo32.json */; };
-		944D56D626F3F5FE00C0B044 /* CTDRifleAmmo33.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56D526F3F5FE00C0B044 /* CTDRifleAmmo33.json */; };
-		944D56D826F3F60A00C0B044 /* CTDRifleAmmo34.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56D726F3F60A00C0B044 /* CTDRifleAmmo34.json */; };
-		944D56DA26F3F61900C0B044 /* CTDRifleAmmo35.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56D926F3F61900C0B044 /* CTDRifleAmmo35.json */; };
-		944D56DC26F3F62100C0B044 /* CTDRifleAmmo36.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56DB26F3F62100C0B044 /* CTDRifleAmmo36.json */; };
-		944D56DE26F3F62800C0B044 /* CTDRifleAmmo37.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56DD26F3F62800C0B044 /* CTDRifleAmmo37.json */; };
-		944D56E026F3F63000C0B044 /* CTDRifleAmmo38.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56DF26F3F63000C0B044 /* CTDRifleAmmo38.json */; };
-		944D56E226F3F63800C0B044 /* CTDRifleAmmo39.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56E126F3F63800C0B044 /* CTDRifleAmmo39.json */; };
-		944D56E426F3F63F00C0B044 /* CTDRifleAmmo40.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56E326F3F63F00C0B044 /* CTDRifleAmmo40.json */; };
-		944D56E626F3F64700C0B044 /* CTDRifleAmmo41.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56E526F3F64700C0B044 /* CTDRifleAmmo41.json */; };
-		944D56E826F3F65000C0B044 /* CTDRifleAmmo42.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56E726F3F65000C0B044 /* CTDRifleAmmo42.json */; };
-		944D56EA26F3F65900C0B044 /* CTDRifleAmmo43.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56E926F3F65900C0B044 /* CTDRifleAmmo43.json */; };
-		944D56EC26F3F66700C0B044 /* CTDRifleAmmo44.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56EB26F3F66700C0B044 /* CTDRifleAmmo44.json */; };
-		944D56EE26F3F93B00C0B044 /* CTDRifleAmmo45.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56ED26F3F93B00C0B044 /* CTDRifleAmmo45.json */; };
-		944D56F026F3F96500C0B044 /* CTDHandgunAmmo6.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56EF26F3F96500C0B044 /* CTDHandgunAmmo6.json */; };
-		944D56F226F3F97200C0B044 /* CTDHandgunAmmo7.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56F126F3F97200C0B044 /* CTDHandgunAmmo7.json */; };
-		944D56F426F3F98100C0B044 /* CTDHandgunAmmo8.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56F326F3F98100C0B044 /* CTDHandgunAmmo8.json */; };
-		944D56F626F3F98E00C0B044 /* CTDHandgunAmmo9.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56F526F3F98E00C0B044 /* CTDHandgunAmmo9.json */; };
-		944D56F826F3F99800C0B044 /* CTDHandgunAmmo10.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56F726F3F99800C0B044 /* CTDHandgunAmmo10.json */; };
-		944D56FC26F3F9B800C0B044 /* CTDHandgunAmmo11.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56FB26F3F9B800C0B044 /* CTDHandgunAmmo11.json */; };
-		944D56FE26F3F9C500C0B044 /* CTDHandgunAmmo12.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56FD26F3F9C500C0B044 /* CTDHandgunAmmo12.json */; };
-		944D570026F3F9D200C0B044 /* CTDHandgunAmmo13.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D56FF26F3F9D200C0B044 /* CTDHandgunAmmo13.json */; };
-		944D570226F3F9DA00C0B044 /* CTDHandgunAmmo14.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D570126F3F9DA00C0B044 /* CTDHandgunAmmo14.json */; };
-		944D570426F3F9ED00C0B044 /* CTDHandgunAmmo15.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D570326F3F9ED00C0B044 /* CTDHandgunAmmo15.json */; };
-		944D570626F3FA2500C0B044 /* CTDHandgunAmmo16.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D570526F3FA2500C0B044 /* CTDHandgunAmmo16.json */; };
-		944D570826F3FA3000C0B044 /* CTDHandgunAmmo17.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D570726F3FA3000C0B044 /* CTDHandgunAmmo17.json */; };
-		944D570A26F3FA3A00C0B044 /* CTDHandgunAmmo18.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D570926F3FA3A00C0B044 /* CTDHandgunAmmo18.json */; };
-		944D570C26F3FA4800C0B044 /* CTDHandgunAmmo19.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D570B26F3FA4800C0B044 /* CTDHandgunAmmo19.json */; };
-		944D570E26F3FA5300C0B044 /* CTDHandgunAmmo20.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D570D26F3FA5300C0B044 /* CTDHandgunAmmo20.json */; };
-		944D571026F3FA6000C0B044 /* CTDHandgunAmmo21.json in Resources */ = {isa = PBXBuildFile; fileRef = 944D570F26F3FA6000C0B044 /* CTDHandgunAmmo21.json */; };
+		9415BD4826F6FB2D00324674 /* customProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415BD4726F6FB2D00324674 /* customProductCell.swift */; };
 		944D571226F3FF3400C0B044 /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D571126F3FF3400C0B044 /* WebData.swift */; };
+		94AB400A26FD9D3F00628645 /* CTDShotgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94AB400926FD9D3F00628645 /* CTDShotgunAmmo.json */; };
 		94E8AD8126F2E097009478C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD8026F2E097009478C2 /* AppDelegate.swift */; };
 		94E8AD8326F2E097009478C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD8226F2E097009478C2 /* SceneDelegate.swift */; };
-		94E8AD8526F2E097009478C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD8426F2E097009478C2 /* ViewController.swift */; };
+		94E8AD8526F2E097009478C2 /* productViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD8426F2E097009478C2 /* productViewController.swift */; };
 		94E8AD8826F2E097009478C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E8AD8626F2E097009478C2 /* Main.storyboard */; };
 		94E8AD8A26F2E099009478C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E8AD8926F2E099009478C2 /* Assets.xcassets */; };
 		94E8AD8D26F2E099009478C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E8AD8B26F2E099009478C2 /* LaunchScreen.storyboard */; };
 		94E8AD9826F2E099009478C2 /* crispy_computing_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD9726F2E099009478C2 /* crispy_computing_appTests.swift */; };
 		94E8ADA326F2E099009478C2 /* crispy_computing_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8ADA226F2E099009478C2 /* crispy_computing_appUITests.swift */; };
-		94E8ADB526F2E49E009478C2 /* CTDShotgunAmmo0.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADB426F2E49E009478C2 /* CTDShotgunAmmo0.json */; };
-		94E8ADB726F2E4BA009478C2 /* CTDShotgunAmmo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADB626F2E4BA009478C2 /* CTDShotgunAmmo1.json */; };
-		94E8ADB926F2E4D8009478C2 /* CTDShotgunAmmo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADB826F2E4D8009478C2 /* CTDShotgunAmmo2.json */; };
-		94E8ADBB26F2E4FA009478C2 /* CTDShotgunAmmo4.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADBA26F2E4FA009478C2 /* CTDShotgunAmmo4.json */; };
-		94E8ADC226F2E739009478C2 /* CTDRifleAmmo0.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADC126F2E739009478C2 /* CTDRifleAmmo0.json */; };
-		94E8ADC426F2E749009478C2 /* CTDRifleAmmo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADC326F2E749009478C2 /* CTDRifleAmmo1.json */; };
-		94E8ADC626F2E759009478C2 /* CTDRifleAmmo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADC526F2E759009478C2 /* CTDRifleAmmo2.json */; };
-		94E8ADC826F2E766009478C2 /* CTDRifleAmmo3.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADC726F2E766009478C2 /* CTDRifleAmmo3.json */; };
-		94E8ADCA26F2E779009478C2 /* CTDRifleAmmo4.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADC926F2E779009478C2 /* CTDRifleAmmo4.json */; };
-		94E8ADCC26F2E793009478C2 /* CTDRifleAmmo5.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADCB26F2E793009478C2 /* CTDRifleAmmo5.json */; };
-		94E8ADCE26F2E79F009478C2 /* CTDRifleAmmo6.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADCD26F2E79F009478C2 /* CTDRifleAmmo6.json */; };
-		94E8ADD026F2E7AA009478C2 /* CTDRifleAmmo7.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADCF26F2E7AA009478C2 /* CTDRifleAmmo7.json */; };
-		94E8ADD226F2E8C6009478C2 /* CTDHandgunAmmo0.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADD126F2E8C6009478C2 /* CTDHandgunAmmo0.json */; };
-		94E8ADD426F2E8DA009478C2 /* CTDHandgunAmmo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADD326F2E8DA009478C2 /* CTDHandgunAmmo1.json */; };
-		94E8ADD626F2E8E8009478C2 /* CTDHandgunAmmo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADD526F2E8E8009478C2 /* CTDHandgunAmmo2.json */; };
-		94E8ADD826F2E8F9009478C2 /* CTDHandgunAmmo3.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADD726F2E8F9009478C2 /* CTDHandgunAmmo3.json */; };
-		94E8ADDA26F2E914009478C2 /* CTDHandgunAmmo4.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADD926F2E914009478C2 /* CTDHandgunAmmo4.json */; };
-		94E8ADDC26F2E923009478C2 /* CTDHandgunAmmo5.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8ADDB26F2E923009478C2 /* CTDHandgunAmmo5.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,65 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		944D56A326F3F47900C0B044 /* CTDRifleAmmo8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo8.json; sourceTree = "<group>"; };
-		944D56A526F3F48D00C0B044 /* CTDRifleAmmo9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo9.json; sourceTree = "<group>"; };
-		944D56A726F3F4AC00C0B044 /* CTDRifleAmmo10.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo10.json; sourceTree = "<group>"; };
-		944D56A926F3F4C100C0B044 /* CTDRifleAmmo11.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo11.json; sourceTree = "<group>"; };
-		944D56AB26F3F4CC00C0B044 /* CTDRifleAmmo12.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo12.json; sourceTree = "<group>"; };
-		944D56AD26F3F4E700C0B044 /* CTDRifleAmmo13.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo13.json; sourceTree = "<group>"; };
-		944D56AF26F3F4F400C0B044 /* CTDRifleAmmo14.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo14.json; sourceTree = "<group>"; };
-		944D56B126F3F4FC00C0B044 /* CTDRifleAmmo15.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo15.json; sourceTree = "<group>"; };
-		944D56B326F3F50F00C0B044 /* CTDRifleAmmo16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo16.json; sourceTree = "<group>"; };
-		944D56B526F3F52C00C0B044 /* CTDRifleAmmo17.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo17.json; sourceTree = "<group>"; };
-		944D56B726F3F53700C0B044 /* CTDRifleAmmo18.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo18.json; sourceTree = "<group>"; };
-		944D56B926F3F54600C0B044 /* CTDRifleAmmo19.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo19.json; sourceTree = "<group>"; };
-		944D56BB26F3F54F00C0B044 /* CTDRifleAmmo20.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo20.json; sourceTree = "<group>"; };
-		944D56BD26F3F55C00C0B044 /* CTDRifleAmmo21.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo21.json; sourceTree = "<group>"; };
-		944D56BF26F3F56500C0B044 /* CTDRifleAmmo22.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo22.json; sourceTree = "<group>"; };
-		944D56C126F3F56E00C0B044 /* CTDRifleAmmo23.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo23.json; sourceTree = "<group>"; };
-		944D56C326F3F57C00C0B044 /* CTDRifleAmmo24.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo24.json; sourceTree = "<group>"; };
-		944D56C526F3F58C00C0B044 /* CTDRifleAmmo25.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo25.json; sourceTree = "<group>"; };
-		944D56C726F3F59F00C0B044 /* CTDRifleAmmo26.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo26.json; sourceTree = "<group>"; };
-		944D56C926F3F5AA00C0B044 /* CTDRifleAmmo27.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo27.json; sourceTree = "<group>"; };
-		944D56CB26F3F5B400C0B044 /* CTDRifleAmmo28.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo28.json; sourceTree = "<group>"; };
-		944D56CD26F3F5C700C0B044 /* CTDRifleAmmo29.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo29.json; sourceTree = "<group>"; };
-		944D56CF26F3F5DC00C0B044 /* CTDRifleAmmo30.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo30.json; sourceTree = "<group>"; };
-		944D56D126F3F5E800C0B044 /* CTDRifleAmmo31.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo31.json; sourceTree = "<group>"; };
-		944D56D326F3F5F300C0B044 /* CTDRifleAmmo32.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo32.json; sourceTree = "<group>"; };
-		944D56D526F3F5FE00C0B044 /* CTDRifleAmmo33.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo33.json; sourceTree = "<group>"; };
-		944D56D726F3F60A00C0B044 /* CTDRifleAmmo34.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo34.json; sourceTree = "<group>"; };
-		944D56D926F3F61900C0B044 /* CTDRifleAmmo35.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo35.json; sourceTree = "<group>"; };
-		944D56DB26F3F62100C0B044 /* CTDRifleAmmo36.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo36.json; sourceTree = "<group>"; };
-		944D56DD26F3F62800C0B044 /* CTDRifleAmmo37.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo37.json; sourceTree = "<group>"; };
-		944D56DF26F3F63000C0B044 /* CTDRifleAmmo38.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo38.json; sourceTree = "<group>"; };
-		944D56E126F3F63800C0B044 /* CTDRifleAmmo39.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo39.json; sourceTree = "<group>"; };
-		944D56E326F3F63F00C0B044 /* CTDRifleAmmo40.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo40.json; sourceTree = "<group>"; };
-		944D56E526F3F64700C0B044 /* CTDRifleAmmo41.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo41.json; sourceTree = "<group>"; };
-		944D56E726F3F65000C0B044 /* CTDRifleAmmo42.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo42.json; sourceTree = "<group>"; };
-		944D56E926F3F65900C0B044 /* CTDRifleAmmo43.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo43.json; sourceTree = "<group>"; };
-		944D56EB26F3F66700C0B044 /* CTDRifleAmmo44.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo44.json; sourceTree = "<group>"; };
-		944D56ED26F3F93B00C0B044 /* CTDRifleAmmo45.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo45.json; sourceTree = "<group>"; };
-		944D56EF26F3F96500C0B044 /* CTDHandgunAmmo6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo6.json; sourceTree = "<group>"; };
-		944D56F126F3F97200C0B044 /* CTDHandgunAmmo7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo7.json; sourceTree = "<group>"; };
-		944D56F326F3F98100C0B044 /* CTDHandgunAmmo8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo8.json; sourceTree = "<group>"; };
-		944D56F526F3F98E00C0B044 /* CTDHandgunAmmo9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo9.json; sourceTree = "<group>"; };
-		944D56F726F3F99800C0B044 /* CTDHandgunAmmo10.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo10.json; sourceTree = "<group>"; };
-		944D56FB26F3F9B800C0B044 /* CTDHandgunAmmo11.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo11.json; sourceTree = "<group>"; };
-		944D56FD26F3F9C500C0B044 /* CTDHandgunAmmo12.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo12.json; sourceTree = "<group>"; };
-		944D56FF26F3F9D200C0B044 /* CTDHandgunAmmo13.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo13.json; sourceTree = "<group>"; };
-		944D570126F3F9DA00C0B044 /* CTDHandgunAmmo14.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo14.json; sourceTree = "<group>"; };
-		944D570326F3F9ED00C0B044 /* CTDHandgunAmmo15.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo15.json; sourceTree = "<group>"; };
-		944D570526F3FA2500C0B044 /* CTDHandgunAmmo16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo16.json; sourceTree = "<group>"; };
-		944D570726F3FA3000C0B044 /* CTDHandgunAmmo17.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo17.json; sourceTree = "<group>"; };
-		944D570926F3FA3A00C0B044 /* CTDHandgunAmmo18.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo18.json; sourceTree = "<group>"; };
-		944D570B26F3FA4800C0B044 /* CTDHandgunAmmo19.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo19.json; sourceTree = "<group>"; };
-		944D570D26F3FA5300C0B044 /* CTDHandgunAmmo20.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo20.json; sourceTree = "<group>"; };
-		944D570F26F3FA6000C0B044 /* CTDHandgunAmmo21.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo21.json; sourceTree = "<group>"; };
+		9415BD4726F6FB2D00324674 /* customProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customProductCell.swift; sourceTree = "<group>"; };
 		944D571126F3FF3400C0B044 /* WebData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebData.swift; sourceTree = "<group>"; };
+		94AB400926FD9D3F00628645 /* CTDShotgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo.json; sourceTree = "<group>"; };
 		94E8AD7D26F2E097009478C2 /* crispy-computing-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crispy-computing-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E8AD8026F2E097009478C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E8AD8226F2E097009478C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94E8AD8426F2E097009478C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94E8AD8426F2E097009478C2 /* productViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productViewController.swift; sourceTree = "<group>"; };
 		94E8AD8726F2E097009478C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94E8AD8926F2E099009478C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E8AD8C26F2E099009478C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -177,24 +55,6 @@
 		94E8AD9E26F2E099009478C2 /* crispy-computing-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crispy-computing-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E8ADA226F2E099009478C2 /* crispy_computing_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crispy_computing_appUITests.swift; sourceTree = "<group>"; };
 		94E8ADA426F2E099009478C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94E8ADB426F2E49E009478C2 /* CTDShotgunAmmo0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo0.json; sourceTree = "<group>"; };
-		94E8ADB626F2E4BA009478C2 /* CTDShotgunAmmo1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo1.json; sourceTree = "<group>"; };
-		94E8ADB826F2E4D8009478C2 /* CTDShotgunAmmo2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo2.json; sourceTree = "<group>"; };
-		94E8ADBA26F2E4FA009478C2 /* CTDShotgunAmmo4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo4.json; sourceTree = "<group>"; };
-		94E8ADC126F2E739009478C2 /* CTDRifleAmmo0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo0.json; sourceTree = "<group>"; };
-		94E8ADC326F2E749009478C2 /* CTDRifleAmmo1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo1.json; sourceTree = "<group>"; };
-		94E8ADC526F2E759009478C2 /* CTDRifleAmmo2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo2.json; sourceTree = "<group>"; };
-		94E8ADC726F2E766009478C2 /* CTDRifleAmmo3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo3.json; sourceTree = "<group>"; };
-		94E8ADC926F2E779009478C2 /* CTDRifleAmmo4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo4.json; sourceTree = "<group>"; };
-		94E8ADCB26F2E793009478C2 /* CTDRifleAmmo5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo5.json; sourceTree = "<group>"; };
-		94E8ADCD26F2E79F009478C2 /* CTDRifleAmmo6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo6.json; sourceTree = "<group>"; };
-		94E8ADCF26F2E7AA009478C2 /* CTDRifleAmmo7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo7.json; sourceTree = "<group>"; };
-		94E8ADD126F2E8C6009478C2 /* CTDHandgunAmmo0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo0.json; sourceTree = "<group>"; };
-		94E8ADD326F2E8DA009478C2 /* CTDHandgunAmmo1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo1.json; sourceTree = "<group>"; };
-		94E8ADD526F2E8E8009478C2 /* CTDHandgunAmmo2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo2.json; sourceTree = "<group>"; };
-		94E8ADD726F2E8F9009478C2 /* CTDHandgunAmmo3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo3.json; sourceTree = "<group>"; };
-		94E8ADD926F2E914009478C2 /* CTDHandgunAmmo4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo4.json; sourceTree = "<group>"; };
-		94E8ADDB26F2E923009478C2 /* CTDHandgunAmmo5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo5.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +82,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94AB400226FD9A9D00628645 /* cheaperThenDirt */ = {
+			isa = PBXGroup;
+			children = (
+				94AB400526FD9AC300628645 /* handgun */,
+				94AB400426FD9AB200628645 /* rifle */,
+				94AB400326FD9AAA00628645 /* shotgun */,
+			);
+			path = cheaperThenDirt;
+			sourceTree = "<group>";
+		};
+		94AB400326FD9AAA00628645 /* shotgun */ = {
+			isa = PBXGroup;
+			children = (
+				94AB400926FD9D3F00628645 /* CTDShotgunAmmo.json */,
+			);
+			path = shotgun;
+			sourceTree = "<group>";
+		};
+		94AB400426FD9AB200628645 /* rifle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = rifle;
+			sourceTree = "<group>";
+		};
+		94AB400526FD9AC300628645 /* handgun */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = handgun;
+			sourceTree = "<group>";
+		};
+		94AB400626FD9B4F00628645 /* luckyGunner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = luckyGunner;
+			sourceTree = "<group>";
+		};
 		94E8AD7426F2E097009478C2 = {
 			isa = PBXGroup;
 			children = (
@@ -248,12 +147,13 @@
 				94E8ADB026F2E134009478C2 /* jsonFiles */,
 				94E8AD8026F2E097009478C2 /* AppDelegate.swift */,
 				94E8AD8226F2E097009478C2 /* SceneDelegate.swift */,
-				94E8AD8426F2E097009478C2 /* ViewController.swift */,
+				94E8AD8426F2E097009478C2 /* productViewController.swift */,
 				94E8AD8626F2E097009478C2 /* Main.storyboard */,
 				94E8AD8926F2E099009478C2 /* Assets.xcassets */,
 				94E8AD8B26F2E099009478C2 /* LaunchScreen.storyboard */,
 				94E8AD8E26F2E099009478C2 /* Info.plist */,
 				944D571126F3FF3400C0B044 /* WebData.swift */,
+				9415BD4726F6FB2D00324674 /* customProductCell.swift */,
 			);
 			path = "crispy-computing-app";
 			sourceTree = "<group>";
@@ -279,106 +179,12 @@
 		94E8ADB026F2E134009478C2 /* jsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				94E8ADC026F2E52C009478C2 /* handgun */,
-				94E8ADBF26F2E525009478C2 /* rifle */,
-				94E8ADBE26F2E510009478C2 /* shotgun */,
+				94AB400626FD9B4F00628645 /* luckyGunner */,
+				94AB400226FD9A9D00628645 /* cheaperThenDirt */,
 			);
 			name = jsonFiles;
 			path = "crispy-computing-app/jsonFiles";
 			sourceTree = SOURCE_ROOT;
-		};
-		94E8ADBE26F2E510009478C2 /* shotgun */ = {
-			isa = PBXGroup;
-			children = (
-				94E8ADB426F2E49E009478C2 /* CTDShotgunAmmo0.json */,
-				94E8ADB626F2E4BA009478C2 /* CTDShotgunAmmo1.json */,
-				94E8ADB826F2E4D8009478C2 /* CTDShotgunAmmo2.json */,
-				94E8ADBA26F2E4FA009478C2 /* CTDShotgunAmmo4.json */,
-			);
-			path = shotgun;
-			sourceTree = "<group>";
-		};
-		94E8ADBF26F2E525009478C2 /* rifle */ = {
-			isa = PBXGroup;
-			children = (
-				94E8ADC126F2E739009478C2 /* CTDRifleAmmo0.json */,
-				94E8ADC326F2E749009478C2 /* CTDRifleAmmo1.json */,
-				94E8ADC526F2E759009478C2 /* CTDRifleAmmo2.json */,
-				94E8ADC726F2E766009478C2 /* CTDRifleAmmo3.json */,
-				94E8ADC926F2E779009478C2 /* CTDRifleAmmo4.json */,
-				94E8ADCB26F2E793009478C2 /* CTDRifleAmmo5.json */,
-				94E8ADCD26F2E79F009478C2 /* CTDRifleAmmo6.json */,
-				94E8ADCF26F2E7AA009478C2 /* CTDRifleAmmo7.json */,
-				944D56A326F3F47900C0B044 /* CTDRifleAmmo8.json */,
-				944D56A526F3F48D00C0B044 /* CTDRifleAmmo9.json */,
-				944D56A726F3F4AC00C0B044 /* CTDRifleAmmo10.json */,
-				944D56A926F3F4C100C0B044 /* CTDRifleAmmo11.json */,
-				944D56AB26F3F4CC00C0B044 /* CTDRifleAmmo12.json */,
-				944D56AD26F3F4E700C0B044 /* CTDRifleAmmo13.json */,
-				944D56AF26F3F4F400C0B044 /* CTDRifleAmmo14.json */,
-				944D56B126F3F4FC00C0B044 /* CTDRifleAmmo15.json */,
-				944D56B326F3F50F00C0B044 /* CTDRifleAmmo16.json */,
-				944D56B526F3F52C00C0B044 /* CTDRifleAmmo17.json */,
-				944D56B726F3F53700C0B044 /* CTDRifleAmmo18.json */,
-				944D56B926F3F54600C0B044 /* CTDRifleAmmo19.json */,
-				944D56BB26F3F54F00C0B044 /* CTDRifleAmmo20.json */,
-				944D56BD26F3F55C00C0B044 /* CTDRifleAmmo21.json */,
-				944D56BF26F3F56500C0B044 /* CTDRifleAmmo22.json */,
-				944D56C126F3F56E00C0B044 /* CTDRifleAmmo23.json */,
-				944D56C326F3F57C00C0B044 /* CTDRifleAmmo24.json */,
-				944D56C526F3F58C00C0B044 /* CTDRifleAmmo25.json */,
-				944D56C726F3F59F00C0B044 /* CTDRifleAmmo26.json */,
-				944D56C926F3F5AA00C0B044 /* CTDRifleAmmo27.json */,
-				944D56CB26F3F5B400C0B044 /* CTDRifleAmmo28.json */,
-				944D56CD26F3F5C700C0B044 /* CTDRifleAmmo29.json */,
-				944D56CF26F3F5DC00C0B044 /* CTDRifleAmmo30.json */,
-				944D56D126F3F5E800C0B044 /* CTDRifleAmmo31.json */,
-				944D56D326F3F5F300C0B044 /* CTDRifleAmmo32.json */,
-				944D56D526F3F5FE00C0B044 /* CTDRifleAmmo33.json */,
-				944D56D726F3F60A00C0B044 /* CTDRifleAmmo34.json */,
-				944D56D926F3F61900C0B044 /* CTDRifleAmmo35.json */,
-				944D56DB26F3F62100C0B044 /* CTDRifleAmmo36.json */,
-				944D56DD26F3F62800C0B044 /* CTDRifleAmmo37.json */,
-				944D56DF26F3F63000C0B044 /* CTDRifleAmmo38.json */,
-				944D56E126F3F63800C0B044 /* CTDRifleAmmo39.json */,
-				944D56E326F3F63F00C0B044 /* CTDRifleAmmo40.json */,
-				944D56E526F3F64700C0B044 /* CTDRifleAmmo41.json */,
-				944D56ED26F3F93B00C0B044 /* CTDRifleAmmo45.json */,
-				944D56E726F3F65000C0B044 /* CTDRifleAmmo42.json */,
-				944D56E926F3F65900C0B044 /* CTDRifleAmmo43.json */,
-				944D56EB26F3F66700C0B044 /* CTDRifleAmmo44.json */,
-			);
-			path = rifle;
-			sourceTree = "<group>";
-		};
-		94E8ADC026F2E52C009478C2 /* handgun */ = {
-			isa = PBXGroup;
-			children = (
-				94E8ADD126F2E8C6009478C2 /* CTDHandgunAmmo0.json */,
-				94E8ADD326F2E8DA009478C2 /* CTDHandgunAmmo1.json */,
-				94E8ADD526F2E8E8009478C2 /* CTDHandgunAmmo2.json */,
-				94E8ADD726F2E8F9009478C2 /* CTDHandgunAmmo3.json */,
-				94E8ADD926F2E914009478C2 /* CTDHandgunAmmo4.json */,
-				94E8ADDB26F2E923009478C2 /* CTDHandgunAmmo5.json */,
-				944D56EF26F3F96500C0B044 /* CTDHandgunAmmo6.json */,
-				944D56F126F3F97200C0B044 /* CTDHandgunAmmo7.json */,
-				944D56F326F3F98100C0B044 /* CTDHandgunAmmo8.json */,
-				944D56F526F3F98E00C0B044 /* CTDHandgunAmmo9.json */,
-				944D56F726F3F99800C0B044 /* CTDHandgunAmmo10.json */,
-				944D56FB26F3F9B800C0B044 /* CTDHandgunAmmo11.json */,
-				944D56FD26F3F9C500C0B044 /* CTDHandgunAmmo12.json */,
-				944D56FF26F3F9D200C0B044 /* CTDHandgunAmmo13.json */,
-				944D570126F3F9DA00C0B044 /* CTDHandgunAmmo14.json */,
-				944D570326F3F9ED00C0B044 /* CTDHandgunAmmo15.json */,
-				944D570726F3FA3000C0B044 /* CTDHandgunAmmo17.json */,
-				944D570926F3FA3A00C0B044 /* CTDHandgunAmmo18.json */,
-				944D570B26F3FA4800C0B044 /* CTDHandgunAmmo19.json */,
-				944D570D26F3FA5300C0B044 /* CTDHandgunAmmo20.json */,
-				944D570F26F3FA6000C0B044 /* CTDHandgunAmmo21.json */,
-				944D570526F3FA2500C0B044 /* CTDHandgunAmmo16.json */,
-			);
-			path = handgun;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -483,81 +289,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944D56D226F3F5E800C0B044 /* CTDRifleAmmo31.json in Resources */,
-				94E8ADC426F2E749009478C2 /* CTDRifleAmmo1.json in Resources */,
-				944D56C626F3F58C00C0B044 /* CTDRifleAmmo25.json in Resources */,
-				944D570426F3F9ED00C0B044 /* CTDHandgunAmmo15.json in Resources */,
-				944D56EA26F3F65900C0B044 /* CTDRifleAmmo43.json in Resources */,
-				944D570226F3F9DA00C0B044 /* CTDHandgunAmmo14.json in Resources */,
-				944D56B026F3F4F400C0B044 /* CTDRifleAmmo14.json in Resources */,
-				944D56BA26F3F54600C0B044 /* CTDRifleAmmo19.json in Resources */,
-				944D56CC26F3F5B400C0B044 /* CTDRifleAmmo28.json in Resources */,
-				944D56E226F3F63800C0B044 /* CTDRifleAmmo39.json in Resources */,
-				944D56F826F3F99800C0B044 /* CTDHandgunAmmo10.json in Resources */,
-				944D56B426F3F50F00C0B044 /* CTDRifleAmmo16.json in Resources */,
-				944D56A426F3F47900C0B044 /* CTDRifleAmmo8.json in Resources */,
-				944D56C426F3F57C00C0B044 /* CTDRifleAmmo24.json in Resources */,
-				944D570026F3F9D200C0B044 /* CTDHandgunAmmo13.json in Resources */,
-				944D56E826F3F65000C0B044 /* CTDRifleAmmo42.json in Resources */,
+				94AB400A26FD9D3F00628645 /* CTDShotgunAmmo.json in Resources */,
 				94E8AD8D26F2E099009478C2 /* LaunchScreen.storyboard in Resources */,
-				944D56CE26F3F5C700C0B044 /* CTDRifleAmmo29.json in Resources */,
-				94E8ADBB26F2E4FA009478C2 /* CTDShotgunAmmo4.json in Resources */,
-				94E8ADB526F2E49E009478C2 /* CTDShotgunAmmo0.json in Resources */,
-				944D56E026F3F63000C0B044 /* CTDRifleAmmo38.json in Resources */,
-				94E8ADC826F2E766009478C2 /* CTDRifleAmmo3.json in Resources */,
-				944D56C026F3F56500C0B044 /* CTDRifleAmmo22.json in Resources */,
-				94E8ADD826F2E8F9009478C2 /* CTDHandgunAmmo3.json in Resources */,
-				944D570A26F3FA3A00C0B044 /* CTDHandgunAmmo18.json in Resources */,
-				944D56FC26F3F9B800C0B044 /* CTDHandgunAmmo11.json in Resources */,
-				944D56F026F3F96500C0B044 /* CTDHandgunAmmo6.json in Resources */,
-				944D570626F3FA2500C0B044 /* CTDHandgunAmmo16.json in Resources */,
-				944D56AC26F3F4CC00C0B044 /* CTDRifleAmmo12.json in Resources */,
-				94E8ADC626F2E759009478C2 /* CTDRifleAmmo2.json in Resources */,
 				94E8AD8A26F2E099009478C2 /* Assets.xcassets in Resources */,
-				94E8ADC226F2E739009478C2 /* CTDRifleAmmo0.json in Resources */,
-				944D56DE26F3F62800C0B044 /* CTDRifleAmmo37.json in Resources */,
-				944D56F226F3F97200C0B044 /* CTDHandgunAmmo7.json in Resources */,
-				944D56A626F3F48D00C0B044 /* CTDRifleAmmo9.json in Resources */,
-				94E8ADD226F2E8C6009478C2 /* CTDHandgunAmmo0.json in Resources */,
-				944D571026F3FA6000C0B044 /* CTDHandgunAmmo21.json in Resources */,
-				944D56BC26F3F54F00C0B044 /* CTDRifleAmmo20.json in Resources */,
-				94E8ADD626F2E8E8009478C2 /* CTDHandgunAmmo2.json in Resources */,
-				944D56D626F3F5FE00C0B044 /* CTDRifleAmmo33.json in Resources */,
-				944D56AE26F3F4E700C0B044 /* CTDRifleAmmo13.json in Resources */,
-				944D56D026F3F5DC00C0B044 /* CTDRifleAmmo30.json in Resources */,
-				944D56A826F3F4AC00C0B044 /* CTDRifleAmmo10.json in Resources */,
-				944D56CA26F3F5AA00C0B044 /* CTDRifleAmmo27.json in Resources */,
-				944D56E426F3F63F00C0B044 /* CTDRifleAmmo40.json in Resources */,
-				94E8ADDC26F2E923009478C2 /* CTDHandgunAmmo5.json in Resources */,
-				94E8ADD026F2E7AA009478C2 /* CTDRifleAmmo7.json in Resources */,
-				944D56AA26F3F4C100C0B044 /* CTDRifleAmmo11.json in Resources */,
-				944D56EE26F3F93B00C0B044 /* CTDRifleAmmo45.json in Resources */,
-				94E8ADB926F2E4D8009478C2 /* CTDShotgunAmmo2.json in Resources */,
-				94E8ADCA26F2E779009478C2 /* CTDRifleAmmo4.json in Resources */,
-				94E8ADDA26F2E914009478C2 /* CTDHandgunAmmo4.json in Resources */,
-				944D56F626F3F98E00C0B044 /* CTDHandgunAmmo9.json in Resources */,
-				944D56D426F3F5F300C0B044 /* CTDRifleAmmo32.json in Resources */,
-				944D56FE26F3F9C500C0B044 /* CTDHandgunAmmo12.json in Resources */,
-				944D56DC26F3F62100C0B044 /* CTDRifleAmmo36.json in Resources */,
-				94E8ADCE26F2E79F009478C2 /* CTDRifleAmmo6.json in Resources */,
-				944D56B826F3F53700C0B044 /* CTDRifleAmmo18.json in Resources */,
-				94E8ADCC26F2E793009478C2 /* CTDRifleAmmo5.json in Resources */,
-				944D56C826F3F59F00C0B044 /* CTDRifleAmmo26.json in Resources */,
-				944D56BE26F3F55C00C0B044 /* CTDRifleAmmo21.json in Resources */,
-				944D56B626F3F52C00C0B044 /* CTDRifleAmmo17.json in Resources */,
-				944D570E26F3FA5300C0B044 /* CTDHandgunAmmo20.json in Resources */,
 				94E8AD8826F2E097009478C2 /* Main.storyboard in Resources */,
-				944D56DA26F3F61900C0B044 /* CTDRifleAmmo35.json in Resources */,
-				944D56EC26F3F66700C0B044 /* CTDRifleAmmo44.json in Resources */,
-				94E8ADB726F2E4BA009478C2 /* CTDShotgunAmmo1.json in Resources */,
-				944D56C226F3F56E00C0B044 /* CTDRifleAmmo23.json in Resources */,
-				944D56D826F3F60A00C0B044 /* CTDRifleAmmo34.json in Resources */,
-				944D570826F3FA3000C0B044 /* CTDHandgunAmmo17.json in Resources */,
-				944D56F426F3F98100C0B044 /* CTDHandgunAmmo8.json in Resources */,
-				944D56B226F3F4FC00C0B044 /* CTDRifleAmmo15.json in Resources */,
-				944D570C26F3FA4800C0B044 /* CTDHandgunAmmo19.json in Resources */,
-				94E8ADD426F2E8DA009478C2 /* CTDHandgunAmmo1.json in Resources */,
-				944D56E626F3F64700C0B044 /* CTDRifleAmmo41.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,9 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				944D571226F3FF3400C0B044 /* WebData.swift in Sources */,
-				94E8AD8526F2E097009478C2 /* ViewController.swift in Sources */,
+				94E8AD8526F2E097009478C2 /* productViewController.swift in Sources */,
 				94E8AD8126F2E097009478C2 /* AppDelegate.swift in Sources */,
 				94E8AD8326F2E097009478C2 /* SceneDelegate.swift in Sources */,
+				9415BD4826F6FB2D00324674 /* customProductCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
