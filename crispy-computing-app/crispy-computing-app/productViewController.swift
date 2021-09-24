@@ -7,11 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class productViewcontroller: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         dump(webData.getProducts())
+        dump(webData.getCaliberName())
         
         // Do any additional setup after loading the view.
     }
