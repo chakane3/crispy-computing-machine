@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9415BD4826F6FB2D00324674 /* customProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415BD4726F6FB2D00324674 /* customProductCell.swift */; };
-		944D571226F3FF3400C0B044 /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D571126F3FF3400C0B044 /* WebData.swift */; };
-		94AB401226FDAEFC00628645 /* CTDRifleAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94AB401126FDAEFC00628645 /* CTDRifleAmmo.json */; };
-		94AB401426FDAF0C00628645 /* CTDShotgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94AB401326FDAF0C00628645 /* CTDShotgunAmmo.json */; };
-		94AB401626FDB03B00628645 /* CTDHandgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94AB401526FDB03B00628645 /* CTDHandgunAmmo.json */; };
+		944D571226F3FF3400C0B044 /* CheaperThanDirtData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */; };
+		94A39B7027011E0F000C43B4 /* LGHandgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B6F27011E0F000C43B4 /* LGHandgunAmmo.json */; };
+		94A39B7227011E28000C43B4 /* LGRifleAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B7127011E28000C43B4 /* LGRifleAmmo.json */; };
+		94A39B7427011E3D000C43B4 /* LGShotgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B7327011E3D000C43B4 /* LGShotgunAmmo.json */; };
+		94A39B7727013994000C43B4 /* CTDHandgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B7627013994000C43B4 /* CTDHandgunAmmo.json */; };
+		94A39B79270139A6000C43B4 /* CTDShotgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B78270139A6000C43B4 /* CTDShotgunAmmo.json */; };
+		94A39B7B270139C9000C43B4 /* CTDRifleAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B7A270139C9000C43B4 /* CTDRifleAmmo.json */; };
 		94E8AD8126F2E097009478C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD8026F2E097009478C2 /* AppDelegate.swift */; };
 		94E8AD8326F2E097009478C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD8226F2E097009478C2 /* SceneDelegate.swift */; };
 		94E8AD8526F2E097009478C2 /* productViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E8AD8426F2E097009478C2 /* productViewController.swift */; };
@@ -41,10 +44,13 @@
 
 /* Begin PBXFileReference section */
 		9415BD4726F6FB2D00324674 /* customProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customProductCell.swift; sourceTree = "<group>"; };
-		944D571126F3FF3400C0B044 /* WebData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebData.swift; sourceTree = "<group>"; };
-		94AB401126FDAEFC00628645 /* CTDRifleAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = CTDRifleAmmo.json; path = "crispy-computing-app/jsonFiles/cheaperThenDirt/ammo/CTDRifleAmmo.json"; sourceTree = SOURCE_ROOT; };
-		94AB401326FDAF0C00628645 /* CTDShotgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = CTDShotgunAmmo.json; path = "crispy-computing-app/jsonFiles/cheaperThenDirt/ammo/CTDShotgunAmmo.json"; sourceTree = SOURCE_ROOT; };
-		94AB401526FDB03B00628645 /* CTDHandgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = CTDHandgunAmmo.json; path = "crispy-computing-app/jsonFiles/cheaperThenDirt/ammo/CTDHandgunAmmo.json"; sourceTree = SOURCE_ROOT; };
+		944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheaperThanDirtData.swift; sourceTree = "<group>"; };
+		94A39B6F27011E0F000C43B4 /* LGHandgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LGHandgunAmmo.json; sourceTree = "<group>"; };
+		94A39B7127011E28000C43B4 /* LGRifleAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LGRifleAmmo.json; sourceTree = "<group>"; };
+		94A39B7327011E3D000C43B4 /* LGShotgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LGShotgunAmmo.json; sourceTree = "<group>"; };
+		94A39B7627013994000C43B4 /* CTDHandgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDHandgunAmmo.json; sourceTree = "<group>"; };
+		94A39B78270139A6000C43B4 /* CTDShotgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo.json; sourceTree = "<group>"; };
+		94A39B7A270139C9000C43B4 /* CTDRifleAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDRifleAmmo.json; sourceTree = "<group>"; };
 		94E8AD7D26F2E097009478C2 /* crispy-computing-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crispy-computing-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E8AD8026F2E097009478C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E8AD8226F2E097009478C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,11 +92,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94A39B7527013815000C43B4 /* ammo */ = {
+			isa = PBXGroup;
+			children = (
+				94A39B7627013994000C43B4 /* CTDHandgunAmmo.json */,
+				94A39B78270139A6000C43B4 /* CTDShotgunAmmo.json */,
+				94A39B7A270139C9000C43B4 /* CTDRifleAmmo.json */,
+			);
+			path = ammo;
+			sourceTree = "<group>";
+		};
 		94AB400226FD9A9D00628645 /* cheaperThenDirt */ = {
 			isa = PBXGroup;
 			children = (
-				94AB400E26FDAE6800628645 /* arms */,
-				94AB400D26FDAE3A00628645 /* ammo */,
+				94A39B7527013815000C43B4 /* ammo */,
 			);
 			path = cheaperThenDirt;
 			sourceTree = "<group>";
@@ -104,26 +119,12 @@
 			path = luckyGunner;
 			sourceTree = "<group>";
 		};
-		94AB400D26FDAE3A00628645 /* ammo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ammo;
-			sourceTree = "<group>";
-		};
-		94AB400E26FDAE6800628645 /* arms */ = {
-			isa = PBXGroup;
-			children = (
-				94AB401126FDAEFC00628645 /* CTDRifleAmmo.json */,
-				94AB401326FDAF0C00628645 /* CTDShotgunAmmo.json */,
-				94AB401526FDB03B00628645 /* CTDHandgunAmmo.json */,
-			);
-			path = arms;
-			sourceTree = "<group>";
-		};
 		94AB400F26FDAE8800628645 /* ammo */ = {
 			isa = PBXGroup;
 			children = (
+				94A39B6F27011E0F000C43B4 /* LGHandgunAmmo.json */,
+				94A39B7127011E28000C43B4 /* LGRifleAmmo.json */,
+				94A39B7327011E3D000C43B4 /* LGShotgunAmmo.json */,
 			);
 			path = ammo;
 			sourceTree = "<group>";
@@ -166,7 +167,7 @@
 				94E8AD8926F2E099009478C2 /* Assets.xcassets */,
 				94E8AD8B26F2E099009478C2 /* LaunchScreen.storyboard */,
 				94E8AD8E26F2E099009478C2 /* Info.plist */,
-				944D571126F3FF3400C0B044 /* WebData.swift */,
+				944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */,
 				9415BD4726F6FB2D00324674 /* customProductCell.swift */,
 			);
 			path = "crispy-computing-app";
@@ -303,12 +304,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94AB401426FDAF0C00628645 /* CTDShotgunAmmo.json in Resources */,
-				94AB401226FDAEFC00628645 /* CTDRifleAmmo.json in Resources */,
+				94A39B79270139A6000C43B4 /* CTDShotgunAmmo.json in Resources */,
 				94E8AD8D26F2E099009478C2 /* LaunchScreen.storyboard in Resources */,
+				94A39B7727013994000C43B4 /* CTDHandgunAmmo.json in Resources */,
+				94A39B7427011E3D000C43B4 /* LGShotgunAmmo.json in Resources */,
 				94E8AD8A26F2E099009478C2 /* Assets.xcassets in Resources */,
 				94E8AD8826F2E097009478C2 /* Main.storyboard in Resources */,
-				94AB401626FDB03B00628645 /* CTDHandgunAmmo.json in Resources */,
+				94A39B7B270139C9000C43B4 /* CTDRifleAmmo.json in Resources */,
+				94A39B7027011E0F000C43B4 /* LGHandgunAmmo.json in Resources */,
+				94A39B7227011E28000C43B4 /* LGRifleAmmo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944D571226F3FF3400C0B044 /* WebData.swift in Sources */,
+				944D571226F3FF3400C0B044 /* CheaperThanDirtData.swift in Sources */,
 				94E8AD8526F2E097009478C2 /* productViewController.swift in Sources */,
 				94E8AD8126F2E097009478C2 /* AppDelegate.swift in Sources */,
 				94E8AD8326F2E097009478C2 /* SceneDelegate.swift in Sources */,
