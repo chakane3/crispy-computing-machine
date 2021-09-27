@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9415BD4826F6FB2D00324674 /* customProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415BD4726F6FB2D00324674 /* customProductCell.swift */; };
 		944D571226F3FF3400C0B044 /* CheaperThanDirtData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */; };
+		9484AB8427017D1B005FC353 /* customProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9484AB8327017D1B005FC353 /* customProductCell.swift */; };
+		9484AB862701804D005FC353 /* productSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9484AB852701804D005FC353 /* productSelectionViewController.swift */; };
 		94A39B7027011E0F000C43B4 /* LGHandgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B6F27011E0F000C43B4 /* LGHandgunAmmo.json */; };
 		94A39B7227011E28000C43B4 /* LGRifleAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B7127011E28000C43B4 /* LGRifleAmmo.json */; };
 		94A39B7427011E3D000C43B4 /* LGShotgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B7327011E3D000C43B4 /* LGShotgunAmmo.json */; };
@@ -43,8 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9415BD4726F6FB2D00324674 /* customProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customProductCell.swift; sourceTree = "<group>"; };
 		944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheaperThanDirtData.swift; sourceTree = "<group>"; };
+		9484AB8327017D1B005FC353 /* customProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customProductCell.swift; sourceTree = "<group>"; };
+		9484AB852701804D005FC353 /* productSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productSelectionViewController.swift; sourceTree = "<group>"; };
 		94A39B6F27011E0F000C43B4 /* LGHandgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LGHandgunAmmo.json; sourceTree = "<group>"; };
 		94A39B7127011E28000C43B4 /* LGRifleAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LGRifleAmmo.json; sourceTree = "<group>"; };
 		94A39B7327011E3D000C43B4 /* LGShotgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LGShotgunAmmo.json; sourceTree = "<group>"; };
@@ -163,12 +165,13 @@
 				94E8AD8026F2E097009478C2 /* AppDelegate.swift */,
 				94E8AD8226F2E097009478C2 /* SceneDelegate.swift */,
 				94E8AD8426F2E097009478C2 /* productViewController.swift */,
+				9484AB8327017D1B005FC353 /* customProductCell.swift */,
 				94E8AD8626F2E097009478C2 /* Main.storyboard */,
+				9484AB852701804D005FC353 /* productSelectionViewController.swift */,
 				94E8AD8926F2E099009478C2 /* Assets.xcassets */,
 				94E8AD8B26F2E099009478C2 /* LaunchScreen.storyboard */,
 				94E8AD8E26F2E099009478C2 /* Info.plist */,
 				944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */,
-				9415BD4726F6FB2D00324674 /* customProductCell.swift */,
 			);
 			path = "crispy-computing-app";
 			sourceTree = "<group>";
@@ -340,8 +343,9 @@
 				944D571226F3FF3400C0B044 /* CheaperThanDirtData.swift in Sources */,
 				94E8AD8526F2E097009478C2 /* productViewController.swift in Sources */,
 				94E8AD8126F2E097009478C2 /* AppDelegate.swift in Sources */,
+				9484AB862701804D005FC353 /* productSelectionViewController.swift in Sources */,
 				94E8AD8326F2E097009478C2 /* SceneDelegate.swift in Sources */,
-				9415BD4826F6FB2D00324674 /* customProductCell.swift in Sources */,
+				9484AB8427017D1B005FC353 /* customProductCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
