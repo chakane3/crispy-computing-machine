@@ -1,15 +1,12 @@
+import json
 import urllib.request
 import re
 from bs4 import BeautifulSoup
 from bs4.element import ProcessingInstruction
 from lxml import html
-import json
 import requests
 
-
-# link to handgun by caliber
-link = "https://www.cheaperthandirt.com/shop-by?cgid=78&searchBy=Caliber"
-
+# functions to scrape web
 def range_price(url):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \
@@ -41,10 +38,12 @@ def get_image(url):
     }
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "lxml")
-    imgSoup = soup.find('div', class_='desktop-zoom') # d-block img-fluid primary-image
-    img = imgSoup.find('img')
-    
-    return img['src']
+    try:
+        imgSoup = soup.find('img', class_='d-block img-fluid primary-image') # d-block img-fluid primary-image
+        if len(str(imgSoup['src'])) > 0:
+            return str(imgSoup['src'])
+    except:
+        return 'no image' 
 
 def scrape_helper(url):
     headers = {
@@ -72,14 +71,15 @@ def scrape_helper(url):
     prices = []
     for price in soup_price:
 
+
         # if product has a range of prices, get the detail product link
         if 'span class="range">' in str(price):
             p = price.find('a', {'class': 'link', 'href': True})
-            prices.append(p)
+            prices.append(p['href'])
         else:
             # if our price is slashed or normal get our price
             p = price.find('span', class_='sales')
-            prices.append(p)
+            prices.append((p.find("span", {"class":"value", "content": True})))
     
     # further scrape prices for a consistent collection
     actual_price = []
@@ -87,8 +87,8 @@ def scrape_helper(url):
 
         # use a helper function to get our high and low price
         if 'http' in price:
-            range_price = range_price(price)
-            actual_price.append(str(range))
+            rp = range_price(price)
+            actual_price.append(str(rp))
 
         # collect price as normal
         else:
@@ -113,7 +113,7 @@ def scrape_helper(url):
     except:
         print("something went wrong")
 
-def scrape(url):
+def scrape(url, json_save):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \
         (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
@@ -134,14 +134,13 @@ def scrape(url):
         for num in soup_dict:
             caliber_numbers.append(num['id'])
 
-    
     caliber_links = []
     calibers = []
 
     # get links
     for link in sections:
         caliber_links.append(link.find_all('a')[0]['href'])
-    
+
     caliber_links = {'number': caliber_numbers, 'section': caliber_links}
 
     # collect products from each caliber link
@@ -166,17 +165,22 @@ def scrape(url):
         for link in products['link']:
             link_list.append(link)
 
-    # print(len(name_list))
-    # print(len(price_list))
-    # print(len(link_list))
-    # print(len(caliber_list))
-    # print(len(images_list))
-
-
-    ammo_data = {'type': 'handgun', 'ammo_results': []}
+    
     for product in range(0, len(name_list)):
         single_product = {'name': name_list[product], 'price': price_list[product], 'caliber': caliber_list[product], 'link': link_list[product], 'imgURL': images_list[product]}
-        ammo_data['ammo_results'].append(single_product)
+        json_save['ammo_results'].append(single_product)
     
-    return ammo_data
+    return json_save
+
+
+# function to help save our data
+def ammo_dict_hg():
+    d = {'type': 'handgun', 'ammo_results': []}
+    return d
+def ammo_dict_rf():
+    d = {'type': 'rifle', 'ammo_results': []}
+    return d
+def ammo_dict_st():
+    d = {'type': 'shotgun', 'ammo_results': []}
+    return d
     
