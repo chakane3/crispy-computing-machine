@@ -31,6 +31,14 @@ def range_price(url):
 
     return range_p
 
+def strip_price(price):
+    rtn = ''
+    aGroup = '0123456789.'
+    for i in price:
+        if i in aGroup:
+            rtn += i
+    return rtn
+
 def get_image(url):
     headers = {
        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \

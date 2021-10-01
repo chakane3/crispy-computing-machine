@@ -7,13 +7,13 @@ import os, shutil, glob
 
 
 # links 
-# hg_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=78&searchBy=Caliber', CTD_scrape.ammo_dict_hg())
-# rf_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=79&searchBy=Caliber', CTD_scrape.ammo_dict_rf())
-# st_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=80&searchBy=Gauge', CTD_scrape.ammo_dict_st())
+hg_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=78&searchBy=Caliber', CTD_scrape.ammo_dict_hg())
+rf_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=79&searchBy=Caliber', CTD_scrape.ammo_dict_rf())
+st_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=80&searchBy=Gauge', CTD_scrape.ammo_dict_st())
 
 hg_LG = LG_scrape.final_scrape("https://www.luckygunner.com/handgun", LG_scrape.ammo_dict_hg())
 rf_LG = LG_scrape.final_scrape("https://www.luckygunner.com/rifle", LG_scrape.ammo_dict_rf())
-st_LG = LG_scrape.final_scrape("https://www.luckygunner.com/shotgun", LG_scrape.ammo_dict_st())
+st_LG = LG_scrape.scrape_shotgun("https://www.luckygunner.com/shotgun", LG_scrape.ammo_dict_st())
 # get user path
 cwd = Path.cwd()
 currentPath = str(Path.cwd())+""
