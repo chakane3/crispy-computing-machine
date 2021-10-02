@@ -199,7 +199,6 @@ def scrape_shotgun_helper(url):
 
     list_of_dicts = []
     for detail in products:
-        print(detail)
         d = detail.find_all('li', class_='item')
         lastItem = detail.find('li', class_='item last')
         
@@ -234,7 +233,6 @@ def scrape_shotgun(url, json_save):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "lxml")
     productLinks = soup.find_all('td')
-    calibers  = []
     detailLink = []
     for i in productLinks:
         scrapedLink = i.find('a')

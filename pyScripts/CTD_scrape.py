@@ -17,19 +17,20 @@ def range_price(url):
     soup = BeautifulSoup(page.content, "lxml")
     lowend = soup.find_all("span", {"class":"value", "itemprop":"lowprice", "content": True})
     highend = soup.find_all("span", {"class":"value", "itemprop":"highprice", "content": True})
-    range_p = ''
+    range_p = 0.0
 
     for price in lowend:
-        range_p += price['content']
+        range_p = price['content']
+        return(range_p)
         range_p += ' - '
         break
 
-    for price in highend:
-        range_p += price['content']
-        range_p += ' - '
-        break
+    # for price in highend:
+    #     range_p += price['content']
+    #     range_p += ' - '
+    #     break
 
-    return range_p
+    # return range_p
 
 def strip_price(price):
     rtn = ''
@@ -37,7 +38,7 @@ def strip_price(price):
     for i in price:
         if i in aGroup:
             rtn += i
-    return rtn
+    return float(rtn)
 
 def get_image(url):
     headers = {
@@ -103,7 +104,7 @@ def scrape_helper(url):
             html_price_tag = str(price)
             split_html_price_tag = html_price_tag.split(' ')
             p = split_html_price_tag[2].strip('content="')
-            actual_price.append(str(p))
+            actual_price.append(float(p))
 
     # get product detail link and image URL
     soup_links = soup.find_all('div', class_='pdp-link')
@@ -162,7 +163,11 @@ def scrape(url, json_save):
             name_list.append(name)
 
         for price in products['price']:
-            price_list.append(price)
+            try:
+                price_list.append(float(price))
+
+            except:
+                price_list.append(price)
 
         for caliber in products['caliber']:
             caliber_list.append(caliber)
