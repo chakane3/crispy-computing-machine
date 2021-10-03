@@ -10,4 +10,4 @@ Soon I will be working on a web version as well<br>
 
 
 # current progress
-<img src="https://media.giphy.com/media/EmIXOdfmSz2L1Grivy/giphy.gif" width=250><br>
+<img src="https://media.giphy.com/media/0SDYiwUBQFBjFF6jyK/giphy.gif" width=250><br>
