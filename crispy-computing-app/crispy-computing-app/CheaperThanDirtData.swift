@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 var aType = gunType?.self
 
@@ -16,10 +17,10 @@ struct CheaperThanDirtData: Codable {
 
 struct productData: Codable {
     let name: String
-    let price: String
+    var price: String
     let link: String
     let caliber: String
-    let imgUrl: String
+    let imgURL: String
 }
 
 extension CheaperThanDirtData {

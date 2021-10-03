@@ -12,33 +12,17 @@ def range_price(url):
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \
         (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
     }
-
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "lxml")
     lowend = soup.find_all("span", {"class":"value", "itemprop":"lowprice", "content": True})
-    highend = soup.find_all("span", {"class":"value", "itemprop":"highprice", "content": True})
-    range_p = 0.0
+    range_p = ''
 
     for price in lowend:
-        range_p = price['content']
-        return(range_p)
-        range_p += ' - '
-        break
+        range_p += price['content']
+        return range_p
 
-    # for price in highend:
-    #     range_p += price['content']
-    #     range_p += ' - '
-    #     break
 
-    # return range_p
-
-def strip_price(price):
-    rtn = ''
-    aGroup = '0123456789.'
-    for i in price:
-        if i in aGroup:
-            rtn += i
-    return float(rtn)
+    
 
 def get_image(url):
     headers = {
@@ -104,7 +88,7 @@ def scrape_helper(url):
             html_price_tag = str(price)
             split_html_price_tag = html_price_tag.split(' ')
             p = split_html_price_tag[2].strip('content="')
-            actual_price.append(float(p))
+            actual_price.append(str(p))
 
     # get product detail link and image URL
     soup_links = soup.find_all('div', class_='pdp-link')
@@ -155,22 +139,19 @@ def scrape(url, json_save):
     # collect products from each caliber link
     name_list, price_list, link_list, caliber_list, images_list = [], [], [], [], []
     for caliber in caliber_links['section']:
-        product_dict = {'caliber': '', 'name': '', 'price': '', 'link': '', 'imgURL': ''}
+        
 
         products = scrape_helper(caliber)
+        c = products['caliber']
 
         for name in products['name']:
             name_list.append(name)
+            caliber_list.append(c)
 
         for price in products['price']:
-            try:
-                price_list.append(float(price))
+            price_list.append(price)
 
-            except:
-                price_list.append(price)
-
-        for caliber in products['caliber']:
-            caliber_list.append(caliber)
+        
 
         for img in products['imgURL']:
             images_list.append(img)
@@ -196,4 +177,3 @@ def ammo_dict_rf():
 def ammo_dict_st():
     d = {'type': 'shotgun', 'ammo_results': []}
     return d
-    

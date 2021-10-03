@@ -20,7 +20,7 @@ class customProductCell: UITableViewCell {
         caliberNameLabel.text = product.caliber
         
         // TODO: add image here
-        ImageClient.fetchImage(for: product.imgUrl) {
+        ImageClient.fetchImage(for: product.imgURL) {
             [unowned self] (result) in
             
             switch result {
