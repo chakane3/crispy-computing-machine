@@ -14,14 +14,33 @@ enum gunType {
     case shotgun
 }
 
+enum searchScope {
+    case name
+    case caliber
+}
+
 class productViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     private var sortAscending = true
+    private var currentScope = searchScope.name
     
     // get data
     var products = [productData]() {
         didSet {
             tableView.reloadData()
+        }
+    }
+    
+    var searchQuery = "" {
+        didSet {
+            switch currentScope {
+            case .name:
+                products = CheaperThanDirtData.getHandgunProducts().filter {$0.name.lowercased().contains(searchQuery.lowercased())}
+                
+            case .caliber:
+                products = CheaperThanDirtData.getHandgunProducts().filter {$0.caliber.lowercased().contains(searchQuery.lowercased())}
+            }
         }
     }
     
@@ -32,6 +51,7 @@ class productViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        searchBar.delegate = self
         loadData()
         sortData(sortAscending)
     }
@@ -65,6 +85,19 @@ class productViewController: UIViewController {
             navigationItem.rightBarButtonItem?.title = "price low to high"
         }
     }
+    
+    func filterHeadlines(for searchText: String) {
+        guard !searchText.isEmpty else {return}
+        products = CheaperThanDirtData.getHandgunProducts().filter {$0.name.lowercased().contains(searchText.lowercased())}
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let productDetailController = segue.destination as? productDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError()
+        }
+        let product = products[indexPath.row]
+        productDetailController.product = product
+    }
 }
 
 
@@ -90,9 +123,35 @@ extension productViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
     }
-    
-  
-  
+}
 
+extension productViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        // dismiss the keyboard
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        switch selectedScope {
+        case 0:
+            currentScope = .name
+        case 1:
+            currentScope = .caliber
+            
+        default:
+            print("not a valid scope")
+        }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard !searchText.isEmpty else {
+            loadData()
+            return
+        }
+        searchQuery = searchText
+    }
+    
+    
+    
 }
 

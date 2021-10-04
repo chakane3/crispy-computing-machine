@@ -8,10 +8,6 @@ import requests
 
 # functions to scrape web
 def range_price(url):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \
-        (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
-    }
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "lxml")
     lowend = soup.find_all("span", {"class":"value", "itemprop":"lowprice", "content": True})
@@ -22,13 +18,7 @@ def range_price(url):
         return range_p
 
 
-    
-
 def get_image(url):
-    headers = {
-       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \
-        (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
-    }
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "lxml")
     try:
@@ -39,10 +29,6 @@ def get_image(url):
         return 'no image' 
 
 def scrape_helper(url):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \
-        (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
-    }
 
     # get soup object
     url+= "=undefined&start=0&sz=100"  # make sure we get all the products
@@ -128,7 +114,6 @@ def scrape(url, json_save):
             caliber_numbers.append(num['id'])
 
     caliber_links = []
-    calibers = []
 
     # get links
     for link in sections:

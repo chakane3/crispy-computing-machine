@@ -17,9 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AHc-zQ-wo2">
-                                <rect key="frame" x="0.0" y="191" width="414" height="671"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" placeholder="search name or caliber" showsCancelButton="YES" showsScopeBar="YES" id="PvX-ht-BoP">
+                                <rect key="frame" x="0.0" y="140" width="414" height="51"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>name</string>
+                                    <string>caliber</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AHc-zQ-wo2">
+                                <rect key="frame" x="0.0" y="191" width="414" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="productCell" rowHeight="221" id="PQB-Uv-t10" customClass="customProductCell" customModule="crispy_computing_app" customModuleProvider="target">
@@ -67,18 +75,20 @@
                                             <outlet property="productImage" destination="KGe-2d-9sd" id="Pro-An-Mj6"/>
                                             <outlet property="productNameLabel" destination="Tcd-jL-pq2" id="KEx-g7-MkS"/>
                                             <outlet property="productPriceLabel" destination="OdD-VZ-r3T" id="qch-0x-L3z"/>
+                                            <segue destination="Ai1-VT-FqZ" kind="show" id="PbW-iV-TGv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PvX-ht-BoP">
-                                <rect key="frame" x="0.0" y="140" width="414" height="51"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TYG-DA-RR0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="leading" secondItem="TYG-DA-RR0" secondAttribute="leading" id="4UC-lh-4vn"/>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="trailing" secondItem="TYG-DA-RR0" secondAttribute="trailing" id="H2u-kY-6NM"/>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="top" secondItem="PvX-ht-BoP" secondAttribute="bottom" id="cw5-G5-RpC"/>
+                            <constraint firstAttribute="bottom" secondItem="AHc-zQ-wo2" secondAttribute="bottom" id="opE-ra-Va2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Products" id="527-n1-BQ9">
                         <barButtonItem key="rightBarButtonItem" title="sort low to high" id="wWm-WD-wu5">
@@ -88,12 +98,54 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="PvX-ht-BoP" id="FCu-JP-lRT"/>
                         <outlet property="tableView" destination="AHc-zQ-wo2" id="ChA-vb-OCV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxN-wU-cih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5998.5507246376819" y="-690.40178571428567"/>
+        </scene>
+        <!--Product Detail View Controller-->
+        <scene sceneID="YrZ-h6-j7W">
+            <objects>
+                <viewController id="Ai1-VT-FqZ" customClass="productDetailViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x7W-m6-tla">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="K0p-Qp-Zfh">
+                                <rect key="frame" x="85" y="141" width="245" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iu-Pl-3gC">
+                                <rect key="frame" x="20" y="395" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGR-E4-WE7">
+                                <rect key="frame" x="20" y="424" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2QO-mu-blF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vmm-bS-X7G"/>
+                    <connections>
+                        <outlet property="caliberLabel" destination="0iu-Pl-3gC" id="5JT-vL-scD"/>
+                        <outlet property="linkLabel" destination="XGR-E4-WE7" id="MUD-z7-SHe"/>
+                        <outlet property="productImage" destination="K0p-Qp-Zfh" id="TXi-Z3-tMy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwA-IX-azh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6844.9275362318849" y="-690.40178571428567"/>
         </scene>
         <!--arms & ammo selection-->
         <scene sceneID="WQe-nE-krx">

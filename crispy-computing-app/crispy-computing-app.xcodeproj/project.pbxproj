@@ -12,6 +12,7 @@
 		9484AB8427017D1B005FC353 /* customProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9484AB8327017D1B005FC353 /* customProductCell.swift */; };
 		9484AB862701804D005FC353 /* productSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9484AB852701804D005FC353 /* productSelectionViewController.swift */; };
 		949B420E270A475300CCAC62 /* CTDShotgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 949B420D270A475300CCAC62 /* CTDShotgunAmmo.json */; };
+		949B4211270A55CA00CCAC62 /* productDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949B4210270A55CA00CCAC62 /* productDetailViewController.swift */; };
 		94A39B7027011E0F000C43B4 /* LGHandgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B6F27011E0F000C43B4 /* LGHandgunAmmo.json */; };
 		94A39B7227011E28000C43B4 /* LGRifleAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B7127011E28000C43B4 /* LGRifleAmmo.json */; };
 		94A39B7427011E3D000C43B4 /* LGShotgunAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A39B7327011E3D000C43B4 /* LGShotgunAmmo.json */; };
@@ -50,6 +51,7 @@
 		9484AB8327017D1B005FC353 /* customProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customProductCell.swift; sourceTree = "<group>"; };
 		9484AB852701804D005FC353 /* productSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productSelectionViewController.swift; sourceTree = "<group>"; };
 		949B420D270A475300CCAC62 /* CTDShotgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CTDShotgunAmmo.json; sourceTree = "<group>"; };
+		949B4210270A55CA00CCAC62 /* productDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailViewController.swift; sourceTree = "<group>"; };
 		94A39B6F27011E0F000C43B4 /* LGHandgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LGHandgunAmmo.json; sourceTree = "<group>"; };
 		94A39B7127011E28000C43B4 /* LGRifleAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LGRifleAmmo.json; sourceTree = "<group>"; };
 		94A39B7327011E3D000C43B4 /* LGShotgunAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LGShotgunAmmo.json; sourceTree = "<group>"; };
@@ -96,6 +98,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		949B420F270A550A00CCAC62 /* viewControllers + customFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9484AB852701804D005FC353 /* productSelectionViewController.swift */,
+				9484AB8327017D1B005FC353 /* customProductCell.swift */,
+				94E8AD8426F2E097009478C2 /* productViewController.swift */,
+				949B4210270A55CA00CCAC62 /* productDetailViewController.swift */,
+			);
+			path = "viewControllers + customFiles";
+			sourceTree = "<group>";
+		};
 		94A39B7527013815000C43B4 /* ammo */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,18 +176,16 @@
 		94E8AD7F26F2E097009478C2 /* crispy-computing-app */ = {
 			isa = PBXGroup;
 			children = (
+				949B420F270A550A00CCAC62 /* viewControllers + customFiles */,
 				94E8ADB026F2E134009478C2 /* jsonFiles */,
 				94E8AD8026F2E097009478C2 /* AppDelegate.swift */,
 				9440C52F27085C0D00BFF8B1 /* ImageClient.swift */,
 				94E8AD8226F2E097009478C2 /* SceneDelegate.swift */,
-				94E8AD8426F2E097009478C2 /* productViewController.swift */,
-				9484AB8327017D1B005FC353 /* customProductCell.swift */,
+				944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */,
 				94E8AD8626F2E097009478C2 /* Main.storyboard */,
-				9484AB852701804D005FC353 /* productSelectionViewController.swift */,
 				94E8AD8926F2E099009478C2 /* Assets.xcassets */,
 				94E8AD8B26F2E099009478C2 /* LaunchScreen.storyboard */,
 				94E8AD8E26F2E099009478C2 /* Info.plist */,
-				944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */,
 			);
 			path = "crispy-computing-app";
 			sourceTree = "<group>";
@@ -348,6 +359,7 @@
 				94E8AD8126F2E097009478C2 /* AppDelegate.swift in Sources */,
 				9484AB862701804D005FC353 /* productSelectionViewController.swift in Sources */,
 				94E8AD8326F2E097009478C2 /* SceneDelegate.swift in Sources */,
+				949B4211270A55CA00CCAC62 /* productDetailViewController.swift in Sources */,
 				9484AB8427017D1B005FC353 /* customProductCell.swift in Sources */,
 				9440C53027085C0D00BFF8B1 /* ImageClient.swift in Sources */,
 			);
