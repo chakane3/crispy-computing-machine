@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nuA-ph-mZ8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -27,7 +27,7 @@
                                 </scopeButtonTitles>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AHc-zQ-wo2">
-                                <rect key="frame" x="0.0" y="191" width="414" height="705"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="671"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="productCell" rowHeight="221" id="PQB-Uv-t10" customClass="customProductCell" customModule="crispy_computing_app" customModuleProvider="target">
@@ -84,10 +84,10 @@
                         <viewLayoutGuide key="safeArea" id="TYG-DA-RR0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="leading" secondItem="TYG-DA-RR0" secondAttribute="leading" id="4UC-lh-4vn"/>
-                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="trailing" secondItem="TYG-DA-RR0" secondAttribute="trailing" id="H2u-kY-6NM"/>
-                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="top" secondItem="PvX-ht-BoP" secondAttribute="bottom" id="cw5-G5-RpC"/>
-                            <constraint firstAttribute="bottom" secondItem="AHc-zQ-wo2" secondAttribute="bottom" id="opE-ra-Va2"/>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="bottom" secondItem="TYG-DA-RR0" secondAttribute="bottom" id="3kW-jX-x44"/>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="trailing" secondItem="TYG-DA-RR0" secondAttribute="trailing" id="6P0-LL-Cq0"/>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="top" secondItem="PvX-ht-BoP" secondAttribute="bottom" id="FXB-Wr-A8p"/>
+                            <constraint firstItem="AHc-zQ-wo2" firstAttribute="leading" secondItem="TYG-DA-RR0" secondAttribute="leading" id="QSH-RE-90v"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Products" id="527-n1-BQ9">
@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxN-wU-cih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5998.5507246376819" y="-690.40178571428567"/>
+            <point key="canvasLocation" x="5990" y="-1383"/>
         </scene>
         <!--Product Detail View Controller-->
         <scene sceneID="YrZ-h6-j7W">
@@ -145,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwA-IX-azh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6844.9275362318849" y="-690.40178571428567"/>
+            <point key="canvasLocation" x="6735" y="-1383"/>
         </scene>
         <!--arms & ammo selection-->
         <scene sceneID="WQe-nE-krx">
@@ -155,27 +155,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcD-tz-gl2">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcD-tz-gl2">
                                 <rect key="frame" x="20" y="240" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Handgun" cornerStyle="medium"/>
                                 <connections>
-                                    <segue destination="RYP-cR-EsC" kind="show" identifier="handgunSegue" id="fKF-0K-oJG"/>
+                                    <segue destination="RYP-cR-EsC" kind="show" id="bWS-w6-cAv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-Tr-KWj">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-Tr-KWj">
                                 <rect key="frame" x="157" y="240" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Rifle"/>
                                 <connections>
-                                    <segue destination="RYP-cR-EsC" kind="show" identifier="rifleSegue" id="mq4-vU-vUl"/>
+                                    <segue destination="zOw-SH-YEn" kind="show" id="HX9-YB-bob"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzz-mC-jlp">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzz-mC-jlp">
                                 <rect key="frame" x="294" y="240" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -183,7 +183,7 @@
                                     <color key="baseForegroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="RYP-cR-EsC" kind="show" identifier="shotgunSegue" id="oko-zr-XGW"/>
+                                    <segue destination="5xP-99-BAB" kind="show" id="cNp-8M-5KM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -215,10 +215,10 @@
                                     <color key="baseForegroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="oFo-2O-boJ" kind="show" identifier="ammoSegue" id="8TD-E8-TEX"/>
+                                    <segue destination="oFo-2O-boJ" kind="show" identifier="handgunSegue" id="hfT-R9-Hbj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCx-SO-y0U">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCx-SO-y0U">
                                 <rect key="frame" x="244" y="239" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -266,10 +266,71 @@
             </objects>
             <point key="canvasLocation" x="3621.739130434783" y="-690.40178571428567"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="A7b-6z-zWC">
+            <objects>
+                <viewController id="zOw-SH-YEn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hTF-K6-mL3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5jN-bX-R4m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VSJ-Sq-vJ2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1T-jH-t6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5990" y="-690"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6nN-er-s36">
+            <objects>
+                <viewController id="5xP-99-BAB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i6g-k9-jJx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xNg-yc-7Vu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JfK-zg-6Ry"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9jX-IC-oBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5990" y="-17"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="42R-yB-nIK">
+            <objects>
+                <viewController id="OPO-En-znm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LwD-CT-Vxs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vKY-cd-clA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qV-zo-cld" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6735" y="-17"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="q7V-XY-wx6">
+            <objects>
+                <viewController id="PL7-f9-oxt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RcE-ns-Ug9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="F4Q-ac-YA7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqg-gG-NLn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6735" y="-690"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Jr8-xT-ENK"/>
-        <segue reference="fKF-0K-oJG"/>
+        <segue reference="hfT-R9-Hbj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="photo.fill" catalog="system" width="128" height="93"/>

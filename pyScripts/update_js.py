@@ -19,7 +19,7 @@ st_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=80&sear
 cwd = Path.cwd()
 currentPath = str(Path.cwd())+""
 
-
+# save json files
 def update_json_CTD(hg, rf, st):
     # save a copy of our json file to the 'web' folder
     rel = "jsonFiles/cheaperThanDirt/ammo"
@@ -45,7 +45,6 @@ def update_json_CTD(hg, rf, st):
 
     with open(os.path.join(savePath, f"CTDShotgunAmmo.json"), "w") as fp:
         json.dump(st, fp)
-
 
 def update_json_LG(hg, rf, st):
     # save a copy of our json file to the 'web' folder

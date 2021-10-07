@@ -17,7 +17,6 @@ def range_price(url):
         range_p += price['content']
         return range_p
 
-
 def get_image(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "lxml")
@@ -93,10 +92,6 @@ def scrape_helper(url):
         print("something went wrong")
 
 def scrape(url, json_save):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \
-        (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
-    }
     
     # get soup object
     page = requests.get(url)
@@ -150,6 +145,7 @@ def scrape(url, json_save):
         json_save['ammo_results'].append(single_product)
     
     return json_save
+
 
 
 # function to help save our data

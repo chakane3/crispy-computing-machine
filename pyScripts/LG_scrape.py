@@ -5,6 +5,7 @@ from lxml import html
 import json
 import requests
 
+# helper functions
 def strip_price(price):
     rtn = ''
     aGroup = '0123456789.'
@@ -84,7 +85,7 @@ def luckyGunner_availability(url):
                     break
     return inStockCleanLinks, outofStockCleanLinks
 
-# scrape 
+# scrape rifle and handgun
 def scrape(link):
 
     link+="?limit=all"
@@ -171,6 +172,7 @@ def final_scrape(url, json_save):
         json_save['ammo_results'].append(i)
 
     return json_save
+
 
 # exception for shotgun ammunition
 def get_image_shotgun(url):

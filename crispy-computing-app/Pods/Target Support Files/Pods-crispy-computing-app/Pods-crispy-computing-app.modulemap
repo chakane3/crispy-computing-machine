@@ -1,0 +1,6 @@
+framework module Pods_crispy_computing_app {
+  umbrella header "Pods-crispy-computing-app-umbrella.h"
+
+  export *
+  module * { export * }
+}
