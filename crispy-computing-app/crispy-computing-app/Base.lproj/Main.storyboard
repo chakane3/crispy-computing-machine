@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nuA-ph-mZ8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -162,7 +162,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Handgun" cornerStyle="medium"/>
                                 <connections>
-                                    <segue destination="RYP-cR-EsC" kind="show" id="bWS-w6-cAv"/>
+                                    <action selector="gunTypeSelect:" destination="oFo-2O-boJ" eventType="touchUpInside" id="W2b-TB-YWF"/>
+                                    <segue destination="RYP-cR-EsC" kind="show" identifier="handgunSegue" id="bWS-w6-cAv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-Tr-KWj">
@@ -172,7 +173,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Rifle"/>
                                 <connections>
-                                    <segue destination="zOw-SH-YEn" kind="show" id="HX9-YB-bob"/>
+                                    <action selector="gunTypeSelect:" destination="oFo-2O-boJ" eventType="touchUpInside" id="SyF-ps-F2A"/>
+                                    <segue destination="zOw-SH-YEn" kind="show" identifier="rifleSegue" id="HX9-YB-bob"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzz-mC-jlp">
@@ -183,7 +185,8 @@
                                     <color key="baseForegroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="5xP-99-BAB" kind="show" id="cNp-8M-5KM"/>
+                                    <action selector="gunTypeSelect:" destination="oFo-2O-boJ" eventType="touchUpInside" id="60S-md-bpm"/>
+                                    <segue destination="5xP-99-BAB" kind="show" identifier="shotgunSegue" id="cNp-8M-5KM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -215,7 +218,8 @@
                                     <color key="baseForegroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="oFo-2O-boJ" kind="show" identifier="handgunSegue" id="hfT-R9-Hbj"/>
+                                    <action selector="ammoOrArmSelection:" destination="37f-it-gbU" eventType="touchUpInside" id="cMf-lc-MYU"/>
+                                    <segue destination="oFo-2O-boJ" kind="show" identifier="ammoSegue" id="hfT-R9-Hbj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCx-SO-y0U">
@@ -229,6 +233,7 @@
                                     <color key="baseForegroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="ammoOrArmSelection:" destination="37f-it-gbU" eventType="touchUpInside" id="Rd3-3S-j0t"/>
                                     <segue destination="oFo-2O-boJ" kind="show" identifier="armsSegue" id="Jr8-xT-ENK"/>
                                 </connections>
                             </button>
@@ -266,10 +271,10 @@
             </objects>
             <point key="canvasLocation" x="3621.739130434783" y="-690.40178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="A7b-6z-zWC">
             <objects>
-                <viewController id="zOw-SH-YEn" sceneMemberID="viewController">
+                <viewController id="zOw-SH-YEn" customClass="productViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hTF-K6-mL3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -280,12 +285,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1T-jH-t6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5990" y="-690"/>
+            <point key="canvasLocation" x="5954" y="-690"/>
         </scene>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="6nN-er-s36">
             <objects>
-                <viewController id="5xP-99-BAB" sceneMemberID="viewController">
+                <viewController id="5xP-99-BAB" customClass="productViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i6g-k9-jJx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,12 +301,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jX-IC-oBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5990" y="-17"/>
+            <point key="canvasLocation" x="5954" y="38"/>
         </scene>
-        <!--View Controller-->
+        <!--Product Detail View Controller-->
         <scene sceneID="42R-yB-nIK">
             <objects>
-                <viewController id="OPO-En-znm" sceneMemberID="viewController">
+                <viewController id="OPO-En-znm" customClass="productDetailViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LwD-CT-Vxs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -311,12 +316,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qV-zo-cld" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6735" y="-17"/>
+            <point key="canvasLocation" x="6735" y="38"/>
         </scene>
-        <!--View Controller-->
+        <!--Product Detail View Controller-->
         <scene sceneID="q7V-XY-wx6">
             <objects>
-                <viewController id="PL7-f9-oxt" sceneMemberID="viewController">
+                <viewController id="PL7-f9-oxt" customClass="productDetailViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RcE-ns-Ug9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

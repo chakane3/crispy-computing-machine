@@ -8,16 +8,11 @@
 import UIKit
 import Foundation
 
-enum gunType {
-    case handgun
-    case rifle
-    case shotgun
-}
-
 enum searchScope {
     case name
     case caliber
 }
+
 
 class productViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -25,12 +20,17 @@ class productViewController: UIViewController {
     private var sortAscending = true
     private var currentScope = searchScope.name
     
+    var selected1: ammoOrArm?
+    var selected2: gunType?
+    
     // get data
     var products = [productData]() {
         didSet {
             tableView.reloadData()
         }
     }
+
+ 
     
     var searchQuery = "" {
         didSet {
@@ -38,14 +38,14 @@ class productViewController: UIViewController {
             case .name:
                 products = CheaperThanDirtData.getHandgunProducts().filter {$0.name.lowercased().contains(searchQuery.lowercased())}
                 
+                
             case .caliber:
                 products = CheaperThanDirtData.getHandgunProducts().filter {$0.caliber.lowercased().contains(searchQuery.lowercased())}
             }
         }
     }
     
-    // set enum
-    let aType = gunType.handgun
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,21 +54,15 @@ class productViewController: UIViewController {
         searchBar.delegate = self
         loadData()
         sortData(sortAscending)
+        print("passed enum: \(selected1!)")
+        print("passed: enum: \(selected2!)")
+
     }
     
     func loadData() {
-        switch aType {
-            
-        case .handgun:
-            products = CheaperThanDirtData.getHandgunProducts()
-            
-        case .rifle:
-            products = CheaperThanDirtData.getRifleProducts()
-        
-        case .shotgun:
-            products = CheaperThanDirtData.getShotgunProducts()
-        }
+        products = CheaperThanDirtData.getHandgunProducts()
     }
+
     
     @IBAction func sortButtonPressed(_ sender: Any) {
         sortAscending.toggle()
@@ -76,7 +70,6 @@ class productViewController: UIViewController {
     }
     
     func sortData(_ sortAscending: Bool) {
-
         if sortAscending {
             products = products.sorted {Double($0.price) ?? 0  < Double($1.price) ?? 0}
             navigationItem.rightBarButtonItem?.title = "price high to low"
@@ -86,10 +79,12 @@ class productViewController: UIViewController {
         }
     }
     
+    
     func filterHeadlines(for searchText: String) {
         guard !searchText.isEmpty else {return}
         products = CheaperThanDirtData.getHandgunProducts().filter {$0.name.lowercased().contains(searchText.lowercased())}
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let productDetailController = segue.destination as? productDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
@@ -107,6 +102,7 @@ extension productViewController: UITableViewDelegate {
         return 225
     }
 }
+
 
 extension productViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -150,8 +146,5 @@ extension productViewController: UISearchBarDelegate {
         }
         searchQuery = searchText
     }
-    
-    
-    
 }
 
