@@ -20,6 +20,7 @@ class productViewController: UIViewController {
     private var sortAscending = true
     private var currentScope = searchScope.name
     
+    // user selection
     var selected1: ammoOrArm?
     var selected2: gunType?
     
@@ -36,7 +37,21 @@ class productViewController: UIViewController {
         didSet {
             switch currentScope {
             case .name:
-                products = CheaperThanDirtData.getHandgunProducts().filter {$0.name.lowercased().contains(searchQuery.lowercased())}
+                
+                switch selected2 {
+                case .handgun:
+                    products = CheaperThanDirtData.getHandgunProducts().filter {$0.name.lowercased().contains(searchQuery.lowercased())}
+                    
+                case .rifle:
+                    products = CheaperThanDirtData.getRifleProducts().filter {$0.name.lowercased().contains(searchQuery.lowercased())}
+                    
+                case .shotgun:
+                    products = CheaperThanDirtData.getShotgunProducts().filter {$0.name.lowercased().contains(searchQuery.lowercased())}
+                    
+                default:
+                    print("no enum given")
+                }
+                
                 
                 
             case .caliber:
@@ -60,7 +75,21 @@ class productViewController: UIViewController {
     }
     
     func loadData() {
-        products = CheaperThanDirtData.getHandgunProducts()
+        
+        switch selected2 {
+        case .handgun:
+            products = CheaperThanDirtData.getHandgunProducts()
+            
+        case .rifle:
+            products = CheaperThanDirtData.getRifleProducts()
+            
+        case .shotgun:
+            products = CheaperThanDirtData.getShotgunProducts()
+            
+        default:
+            print("no enum was given")
+        }
+        
     }
 
     
@@ -82,7 +111,21 @@ class productViewController: UIViewController {
     
     func filterHeadlines(for searchText: String) {
         guard !searchText.isEmpty else {return}
-        products = CheaperThanDirtData.getHandgunProducts().filter {$0.name.lowercased().contains(searchText.lowercased())}
+        
+        switch selected2 {
+        case .handgun:
+            products = CheaperThanDirtData.getHandgunProducts().filter {$0.name.lowercased().contains(searchText.lowercased())}
+            
+        case .rifle:
+            products = CheaperThanDirtData.getRifleProducts().filter {$0.name.lowercased().contains(searchText.lowercased())}
+        
+        case .shotgun:
+            products = CheaperThanDirtData.getShotgunProducts().filter {$0.name.lowercased().contains(searchText.lowercased())}
+            
+        default:
+            print("no enum given")
+        }
+      
     }
     
     

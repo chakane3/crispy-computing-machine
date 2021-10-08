@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxN-wU-cih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5990" y="-1383"/>
+            <point key="canvasLocation" x="6016" y="-690"/>
         </scene>
         <!--Product Detail View Controller-->
         <scene sceneID="YrZ-h6-j7W">
@@ -145,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwA-IX-azh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6735" y="-1383"/>
+            <point key="canvasLocation" x="6819" y="-690"/>
         </scene>
         <!--arms & ammo selection-->
         <scene sceneID="WQe-nE-krx">
@@ -174,7 +174,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Rifle"/>
                                 <connections>
                                     <action selector="gunTypeSelect:" destination="oFo-2O-boJ" eventType="touchUpInside" id="SyF-ps-F2A"/>
-                                    <segue destination="zOw-SH-YEn" kind="show" identifier="rifleSegue" id="HX9-YB-bob"/>
+                                    <segue destination="RYP-cR-EsC" kind="show" id="cGh-zk-73i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzz-mC-jlp">
@@ -186,7 +186,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="gunTypeSelect:" destination="oFo-2O-boJ" eventType="touchUpInside" id="60S-md-bpm"/>
-                                    <segue destination="5xP-99-BAB" kind="show" identifier="shotgunSegue" id="cNp-8M-5KM"/>
+                                    <segue destination="RYP-cR-EsC" kind="show" id="qdE-zd-3Cv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -271,71 +271,10 @@
             </objects>
             <point key="canvasLocation" x="3621.739130434783" y="-690.40178571428567"/>
         </scene>
-        <!--Product View Controller-->
-        <scene sceneID="A7b-6z-zWC">
-            <objects>
-                <viewController id="zOw-SH-YEn" customClass="productViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hTF-K6-mL3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="5jN-bX-R4m"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="VSJ-Sq-vJ2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L1T-jH-t6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5954" y="-690"/>
-        </scene>
-        <!--Product View Controller-->
-        <scene sceneID="6nN-er-s36">
-            <objects>
-                <viewController id="5xP-99-BAB" customClass="productViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i6g-k9-jJx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="xNg-yc-7Vu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="JfK-zg-6Ry"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9jX-IC-oBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5954" y="38"/>
-        </scene>
-        <!--Product Detail View Controller-->
-        <scene sceneID="42R-yB-nIK">
-            <objects>
-                <viewController id="OPO-En-znm" customClass="productDetailViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LwD-CT-Vxs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vKY-cd-clA"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8qV-zo-cld" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6735" y="38"/>
-        </scene>
-        <!--Product Detail View Controller-->
-        <scene sceneID="q7V-XY-wx6">
-            <objects>
-                <viewController id="PL7-f9-oxt" customClass="productDetailViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RcE-ns-Ug9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="F4Q-ac-YA7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tqg-gG-NLn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6735" y="-690"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="hfT-R9-Hbj"/>
+        <segue reference="bWS-w6-cAv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="photo.fill" catalog="system" width="128" height="93"/>

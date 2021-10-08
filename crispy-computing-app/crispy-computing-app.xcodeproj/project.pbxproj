@@ -10,7 +10,6 @@
 		498AEE298866BF2A4418A8F3 /* Pods_crispy_computing_app_crispy_computing_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F12A5EB76BD05AADFEC24BB /* Pods_crispy_computing_app_crispy_computing_appUITests.framework */; };
 		8611E767F4D9FB9D5E437FC6 /* Pods_crispy_computing_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBF5DBAF3CD6F9CD88C6DF2 /* Pods_crispy_computing_appTests.framework */; };
 		940E952A270CDF2400344C72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 940E9529270CDF2400344C72 /* GoogleService-Info.plist */; };
-		9421CB8B270FABC8009EFA2E /* firebaseSend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9421CB8A270FABC8009EFA2E /* firebaseSend.swift */; };
 		9440C53027085C0D00BFF8B1 /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9440C52F27085C0D00BFF8B1 /* ImageClient.swift */; };
 		944D571226F3FF3400C0B044 /* CheaperThanDirtData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */; };
 		9484AB8427017D1B005FC353 /* customProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9484AB8327017D1B005FC353 /* customProductCell.swift */; };
@@ -55,7 +54,6 @@
 		329CB67DE05E84F068C63A24 /* Pods-crispy-computing-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crispy-computing-app.debug.xcconfig"; path = "Target Support Files/Pods-crispy-computing-app/Pods-crispy-computing-app.debug.xcconfig"; sourceTree = "<group>"; };
 		89869FCD612EF6594BDCC3C2 /* Pods-crispy-computing-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crispy-computing-app.release.xcconfig"; path = "Target Support Files/Pods-crispy-computing-app/Pods-crispy-computing-app.release.xcconfig"; sourceTree = "<group>"; };
 		940E9529270CDF2400344C72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9421CB8A270FABC8009EFA2E /* firebaseSend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseSend.swift; sourceTree = "<group>"; };
 		9440C52F27085C0D00BFF8B1 /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
 		944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheaperThanDirtData.swift; sourceTree = "<group>"; };
 		9484AB8327017D1B005FC353 /* customProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customProductCell.swift; sourceTree = "<group>"; };
@@ -195,6 +193,34 @@
 			path = arms;
 			sourceTree = "<group>";
 		};
+		94C31ECA2710D99E0046E3FD /* webData */ = {
+			isa = PBXGroup;
+			children = (
+				944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */,
+				9440C52F27085C0D00BFF8B1 /* ImageClient.swift */,
+			);
+			path = webData;
+			sourceTree = "<group>";
+		};
+		94C31ECB2710D9C10046E3FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94E8AD8926F2E099009478C2 /* Assets.xcassets */,
+				94E8AD8226F2E097009478C2 /* SceneDelegate.swift */,
+				94E8AD8026F2E097009478C2 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94C31ECC2710D9FA0046E3FD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				94E8AD8626F2E097009478C2 /* Main.storyboard */,
+				94E8AD8B26F2E099009478C2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		94E8AD7426F2E097009478C2 = {
 			isa = PBXGroup;
 			children = (
@@ -220,18 +246,13 @@
 		94E8AD7F26F2E097009478C2 /* crispy-computing-app */ = {
 			isa = PBXGroup;
 			children = (
+				94C31ECC2710D9FA0046E3FD /* Storyboards */,
+				94C31ECB2710D9C10046E3FD /* Supporting Files */,
+				94C31ECA2710D99E0046E3FD /* webData */,
 				949B420F270A550A00CCAC62 /* viewControllers + customFiles */,
 				94E8ADB026F2E134009478C2 /* jsonFiles */,
-				94E8AD8026F2E097009478C2 /* AppDelegate.swift */,
-				9440C52F27085C0D00BFF8B1 /* ImageClient.swift */,
-				94E8AD8226F2E097009478C2 /* SceneDelegate.swift */,
-				944D571126F3FF3400C0B044 /* CheaperThanDirtData.swift */,
-				94E8AD8626F2E097009478C2 /* Main.storyboard */,
-				94E8AD8926F2E099009478C2 /* Assets.xcassets */,
-				94E8AD8B26F2E099009478C2 /* LaunchScreen.storyboard */,
 				94E8AD8E26F2E099009478C2 /* Info.plist */,
 				940E9529270CDF2400344C72 /* GoogleService-Info.plist */,
-				9421CB8A270FABC8009EFA2E /* firebaseSend.swift */,
 			);
 			path = "crispy-computing-app";
 			sourceTree = "<group>";
@@ -512,7 +533,6 @@
 				944D571226F3FF3400C0B044 /* CheaperThanDirtData.swift in Sources */,
 				94E8AD8526F2E097009478C2 /* productViewController.swift in Sources */,
 				94E8AD8126F2E097009478C2 /* AppDelegate.swift in Sources */,
-				9421CB8B270FABC8009EFA2E /* firebaseSend.swift in Sources */,
 				9484AB862701804D005FC353 /* productSelectionViewController.swift in Sources */,
 				94E8AD8326F2E097009478C2 /* SceneDelegate.swift in Sources */,
 				949B4211270A55CA00CCAC62 /* productDetailViewController.swift in Sources */,
@@ -701,6 +721,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.crispy-computing-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -721,6 +742,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.crispy-computing-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
