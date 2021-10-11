@@ -7,23 +7,20 @@
 
 import UIKit
 
-class productDetailViewController: UIViewController {
+class CTDproductDetailViewController: UIViewController {
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var caliberLabel: UILabel!
-    @IBOutlet weak var linkLabel: UILabel!
-    
-    var product: productData?
+    @IBOutlet weak var linkLabel: UIButton!
+    var product: CTDproductData?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
     
-    
     func updateUI() {
         navigationItem.title = product?.name
         caliberLabel.text = product?.caliber
-        linkLabel.text = product?.link
         
         
         // add image here

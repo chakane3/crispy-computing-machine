@@ -8,24 +8,24 @@
 import UIKit
 import Foundation
 
-enum searchScope {
+enum CTDsearchScope {
     case name
     case caliber
 }
 
 
-class productViewController: UIViewController {
+class CTDproductViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     private var sortAscending = true
-    private var currentScope = searchScope.name
+    private var currentScope = CTDsearchScope.name
     
     // user selection
     var selected1: ammoOrArm?
     var selected2: gunType?
     
     // get data
-    var products = [productData]() {
+    var products = [CTDproductData]() {
         didSet {
             tableView.reloadData()
         }
@@ -130,7 +130,7 @@ class productViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let productDetailController = segue.destination as? productDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+        guard let productDetailController = segue.destination as? CTDproductDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
             fatalError()
         }
         let product = products[indexPath.row]
@@ -140,14 +140,14 @@ class productViewController: UIViewController {
 
 
 // MARK: Extensions
-extension productViewController: UITableViewDelegate {
+extension CTDproductViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 225
     }
 }
 
 
-extension productViewController: UITableViewDataSource {
+extension CTDproductViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // set up our custom cell
@@ -164,7 +164,7 @@ extension productViewController: UITableViewDataSource {
     }
 }
 
-extension productViewController: UISearchBarDelegate {
+extension CTDproductViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         // dismiss the keyboard
         searchBar.resignFirstResponder()

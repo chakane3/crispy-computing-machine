@@ -20,7 +20,7 @@ enum gunType {
 }
 
 class productSelectionViewController: UIViewController {
-    var products = [productData]()
+    var products = [CTDproductData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +66,7 @@ class productSelectionViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let pVC = segue.destination as? productViewController else {
+        guard let pVC = segue.destination as? CTDproductViewController else {
             return
         }
         pVC.selected1 = ammoOrArms

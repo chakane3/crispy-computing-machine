@@ -12,7 +12,7 @@
         <!--Products-->
         <scene sceneID="GJu-Kh-io0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="RYP-cR-EsC" customClass="productViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="RYP-cR-EsC" customClass="CTDproductViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DWi-Yp-i9u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="6016" y="-690"/>
         </scene>
-        <!--Product Detail View Controller-->
+        <!--Dproduct Detail View Controller-->
         <scene sceneID="YrZ-h6-j7W">
             <objects>
-                <viewController id="Ai1-VT-FqZ" customClass="productDetailViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ai1-VT-FqZ" customClass="CTDproductDetailViewController" customModule="crispy_computing_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x7W-m6-tla">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,27 +125,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGR-E4-WE7">
-                                <rect key="frame" x="20" y="424" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he0-Ve-0JN">
+                                <rect key="frame" x="20" y="831" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="link to page"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2QO-mu-blF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="he0-Ve-0JN" firstAttribute="leading" secondItem="2QO-mu-blF" secondAttribute="leading" constant="20" id="2J2-ih-XAB"/>
+                            <constraint firstItem="he0-Ve-0JN" firstAttribute="bottom" secondItem="2QO-mu-blF" secondAttribute="bottom" id="5jg-LM-hTd"/>
+                            <constraint firstItem="2QO-mu-blF" firstAttribute="trailing" secondItem="he0-Ve-0JN" secondAttribute="trailing" constant="20" id="OUP-Dw-ciA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vmm-bS-X7G"/>
                     <connections>
                         <outlet property="caliberLabel" destination="0iu-Pl-3gC" id="5JT-vL-scD"/>
-                        <outlet property="linkLabel" destination="XGR-E4-WE7" id="MUD-z7-SHe"/>
                         <outlet property="productImage" destination="K0p-Qp-Zfh" id="TXi-Z3-tMy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwA-IX-azh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6819" y="-690"/>
+            <point key="canvasLocation" x="6818.8405797101459" y="-690.40178571428567"/>
         </scene>
         <!--arms & ammo selection-->
         <scene sceneID="WQe-nE-krx">

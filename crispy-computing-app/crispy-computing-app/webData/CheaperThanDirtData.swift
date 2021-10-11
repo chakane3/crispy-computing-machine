@@ -12,10 +12,10 @@ var aType = gunType?.self
 
 struct CheaperThanDirtData: Codable {
     let type: String
-    let ammo_results: [productData]
+    let ammo_results: [CTDproductData]
 }
 
-struct productData: Codable {
+struct CTDproductData: Codable {
     let name: String
     var price: String
     let link: String
@@ -25,8 +25,8 @@ struct productData: Codable {
 
 extension CheaperThanDirtData {
     // functions to parse json data
-    static func getRifleProducts() -> [productData] {
-        var caliberName = [productData]()
+    static func getRifleProducts() -> [CTDproductData] {
+        var caliberName = [CTDproductData]()
         guard let fileUrl = Bundle.main.url(forResource: "CTDRifleAmmo", withExtension: "json") else {
             fatalError("check json name, or if it exists")
         }
@@ -40,8 +40,8 @@ extension CheaperThanDirtData {
         return caliberName
     }
     
-    static func getHandgunProducts() -> [productData]{
-        var caliberName = [productData]()
+    static func getHandgunProducts() -> [CTDproductData]{
+        var caliberName = [CTDproductData]()
         guard let fileUrl = Bundle.main.url(forResource: "CTDHandgunAmmo", withExtension: "json") else {
             fatalError("check json name, or if it exists")
         }
@@ -55,8 +55,8 @@ extension CheaperThanDirtData {
         return caliberName
     }
     
-    static func getShotgunProducts() -> [productData] {
-        var caliberName = [productData]()
+    static func getShotgunProducts() -> [CTDproductData] {
+        var caliberName = [CTDproductData]()
         guard let fileUrl = Bundle.main.url(forResource: "CTDShotgunAmmo", withExtension: "json") else {
             fatalError("check json name, or if it exists")
         }
@@ -69,25 +69,4 @@ extension CheaperThanDirtData {
         }
         return caliberName
     }
-    
-//    static func getSectionsByCaliber() -> [[productData]] {
-//        print(aType)
-//        let sortedCalibers =  getHandgunProducts().sorted {$0.caliber < $1.caliber}  // alphabetically sort caliber list
-//        let caliberNames: Set<String> = Set(getHandgunProducts().map {$0.caliber})  // get unique values
-//        var sectionsArr = Array(repeating: [productData](), count: caliberNames.count)
-//
-//        var currentIndex = 0
-//        var currentCaliber = sortedCalibers.first?.caliber ?? "model error"
-//
-//        for productCaliber in sortedCalibers {
-//            if productCaliber.caliber == currentCaliber {
-//                sectionsArr[currentIndex].append(productCaliber)
-//            } else {
-//                currentIndex += 1
-//                currentCaliber = productCaliber.caliber
-//                sectionsArr[currentIndex].append(productCaliber)
-//            }
-//        }
-//        return sectionsArr
-//    }
 }

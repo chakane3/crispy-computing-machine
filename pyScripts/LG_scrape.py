@@ -124,33 +124,33 @@ def scrape(link):
     list_of_dicts = []
 
     for product in detailProduct:
-        aDict = {'name': '', 'prices': '', 'links': '', 'caliber': '', 'imageUrl': ''}
+        aDict = {'name': '', 'price': '', 'link': '', 'caliber': '', 'imageURL': ''}
 
         # scrape names
         name = product.find('a')
         name = name.find('span').text
         aDict['name'] = name
         
-        aDict['imageUrl'] = imageURL[imageIndex]
+        aDict['imageURL'] = imageURL[imageIndex]
 
         # scrape prices
         price = product.find('div', class_='price-box')
         if "Special Price" in str(price):
             price = price.find('span', class_='price')
-            aDict['prices'] = strip_price(price.text)
+            aDict['price'] = strip_price(price.text)
         else:
             if 'As low as' in str(price):
                 price = (price.find('span', class_='price'))
-                aDict['prices'] = strip_price(price.text)
+                aDict['price'] = strip_price(price.text)
             else:
                 try:
                     prices.append(price.text)
-                    aDict['prices'] = strip_price(price.text)
+                    aDict['price'] = strip_price(price.text)
                 except:
                     prices.append("NOPE")
-                    aDict['prices'] = "out of stock"
+                    aDict['price'] = "out of stock"
 
-        aDict['links'] = dictLinks[linkIndex]
+        aDict['link'] = dictLinks[linkIndex]
         linkIndex += 1
         imageIndex+=1
         try:
