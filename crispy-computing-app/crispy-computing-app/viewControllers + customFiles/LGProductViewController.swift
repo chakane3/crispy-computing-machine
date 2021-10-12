@@ -17,6 +17,4 @@ class LGProductViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
 }
