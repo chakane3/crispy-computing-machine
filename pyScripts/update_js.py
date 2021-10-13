@@ -4,23 +4,24 @@ import json
 from pathlib import Path
 import os
 import time
+from itertools import chain
 
-js_to_swift = []
+
 
 # links 
 hg_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=78&searchBy=Caliber', CTD_scrape.ammo_dict_hg())
-# rf_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=79&searchBy=Caliber', CTD_scrape.ammo_dict_rf())
+rf_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=79&searchBy=Caliber', CTD_scrape.ammo_dict_rf())
 # st_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=80&searchBy=Gauge', CTD_scrape.ammo_dict_st())
 
 
-hg_lg = LG_scrape.final_scrape("https://www.luckygunner.com/handgun", LG_scrape.ammo_dict_hg())
+# hg_lg = LG_scrape.final_scrape("https://www.luckygunner.com/handgun", LG_scrape.ammo_dict_hg())
 # rf_lg = LG_scrape.final_scrape("https://www.luckygunner.com/rifle", LG_scrape.ammo_dict_rf())
 # st_lg = LG_scrape.scrape_shotgun("https://www.luckygunner.com/shotgun", LG_scrape.ammo_dict_st())
 
-js_to_swift.append(hg_ctd)
-js_to_swift.append(hg_lg)
 
 
+js_to_swift = {"results": [hg_ctd, rf_ctd]}
+    
 
 
 # get user path

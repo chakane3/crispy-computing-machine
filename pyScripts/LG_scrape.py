@@ -124,7 +124,7 @@ def scrape(link):
     list_of_dicts = []
 
     for product in detailProduct:
-        aDict = {'name': '', 'price': '', 'link': '', 'caliber': '', 'imageURL': ''}
+        aDict = {'name': '', 'price': '', 'link': '', 'caliber': '', 'imgURL': ''}
 
         # scrape names
         name = product.find('a')
