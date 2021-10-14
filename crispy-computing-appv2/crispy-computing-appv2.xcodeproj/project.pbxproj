@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940374372717ABDD00713A78 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940374362717ABDD00713A78 /* ProductViewController.swift */; };
+		940374392717AEA000713A78 /* searchBarHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940374382717AEA000713A78 /* searchBarHelp.swift */; };
+		9403743B2717B1D300713A78 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9403743A2717B1D300713A78 /* CustomTableViewCell.swift */; };
+		9403743D2717B2E700713A78 /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9403743C2717B2E700713A78 /* ImageClient.swift */; };
 		943E8A4F2714F656004E70FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E8A4E2714F656004E70FE /* AppDelegate.swift */; };
 		943E8A512714F656004E70FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E8A502714F656004E70FE /* SceneDelegate.swift */; };
 		943E8A532714F656004E70FE /* productSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E8A522714F656004E70FE /* productSelectionViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		940374362717ABDD00713A78 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		940374382717AEA000713A78 /* searchBarHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBarHelp.swift; sourceTree = "<group>"; };
+		9403743A2717B1D300713A78 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		9403743C2717B2E700713A78 /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
 		943E8A4B2714F656004E70FE /* crispy-computing-appv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crispy-computing-appv2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		943E8A4E2714F656004E70FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		943E8A502714F656004E70FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				943E8A522714F656004E70FE /* productSelectionViewController.swift */,
+				940374362717ABDD00713A78 /* ProductViewController.swift */,
+				940374382717AEA000713A78 /* searchBarHelp.swift */,
+				9403743A2717B1D300713A78 /* CustomTableViewCell.swift */,
+				9403743C2717B2E700713A78 /* ImageClient.swift */,
 			);
 			path = "Views + helpers";
 			sourceTree = "<group>";
@@ -193,9 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940374372717ABDD00713A78 /* ProductViewController.swift in Sources */,
 				943E8A532714F656004E70FE /* productSelectionViewController.swift in Sources */,
 				943E8A6D2714FFDA004E70FE /* ammoData.swift in Sources */,
+				9403743B2717B1D300713A78 /* CustomTableViewCell.swift in Sources */,
 				943E8A4F2714F656004E70FE /* AppDelegate.swift in Sources */,
+				940374392717AEA000713A78 /* searchBarHelp.swift in Sources */,
+				9403743D2717B2E700713A78 /* ImageClient.swift in Sources */,
 				943E8A512714F656004E70FE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

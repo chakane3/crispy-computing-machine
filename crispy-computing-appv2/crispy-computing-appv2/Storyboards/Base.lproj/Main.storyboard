@@ -16,13 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPw-kf-yBq">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPw-kf-yBq">
                                 <rect key="frame" x="260" y="238" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="arms"/>
                                 <connections>
+                                    <action selector="ammoOrArmsSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHu-ya-jmF"/>
                                     <segue destination="cmx-ao-f66" kind="show" id="NWS-oI-xJ9"/>
                                 </connections>
                             </button>
@@ -33,6 +34,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ammo"/>
                                 <connections>
+                                    <action selector="ammoOrArmsSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kxl-WJ-1cZ"/>
                                     <segue destination="cmx-ao-f66" kind="show" id="psw-vb-auk"/>
                                 </connections>
                             </button>
@@ -49,12 +51,12 @@
         <!--product selection-->
         <scene sceneID="Nps-RD-deL">
             <objects>
-                <viewController id="cmx-ao-f66" sceneMemberID="viewController">
+                <viewController id="cmx-ao-f66" customClass="productSelectionViewController" customModule="crispy_computing_appv2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lPZ-3t-crb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWi-Br-Jtz">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWi-Br-Jtz">
                                 <rect key="frame" x="170" y="223" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -66,7 +68,7 @@
                                     <segue destination="1Tq-RE-YtN" kind="show" id="pX1-KL-iy9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dH-rU-yqy">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dH-rU-yqy">
                                 <rect key="frame" x="319" y="223" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -78,7 +80,7 @@
                                     <segue destination="1Tq-RE-YtN" kind="show" id="o7C-pQ-ndv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZz-fC-WKf">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZz-fC-WKf">
                                 <rect key="frame" x="20" y="223" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -87,6 +89,7 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleSubhead"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="gunTypeSelection:" destination="cmx-ao-f66" eventType="touchUpInside" id="1Ez-JQ-6xO"/>
                                     <segue destination="1Tq-RE-YtN" kind="show" id="bzx-IR-eN7"/>
                                 </connections>
                             </button>
@@ -103,7 +106,7 @@
         <!--products-->
         <scene sceneID="qe2-0J-TkL">
             <objects>
-                <viewController id="1Tq-RE-YtN" sceneMemberID="viewController">
+                <viewController id="1Tq-RE-YtN" customClass="ProductViewController" customModule="crispy_computing_appv2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O3q-Rc-tne">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +115,7 @@
                                 <rect key="frame" x="0.0" y="191" width="414" height="671"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="productCell" rowHeight="244" id="kL5-Kj-9I0">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="productCell" rowHeight="244" id="kL5-Kj-9I0" customClass="CustomTableViewCell" customModule="crispy_computing_appv2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="244"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kL5-Kj-9I0" id="Vam-xc-LIr">
@@ -171,6 +174,12 @@
                                                 <constraint firstItem="qhW-kt-1TC" firstAttribute="top" secondItem="Vam-xc-LIr" secondAttribute="topMargin" constant="8" id="yDT-Pj-hQi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caliberNameLabel" destination="hfv-oj-OzC" id="290-87-Eb8"/>
+                                            <outlet property="productImage" destination="qhW-kt-1TC" id="qdw-vY-xSM"/>
+                                            <outlet property="productNameLabel" destination="4Uj-Th-OT0" id="o85-pP-Hnr"/>
+                                            <outlet property="productPriceLabel" destination="0cO-zD-eov" id="Q9R-pC-QOA"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -191,7 +200,17 @@
                             <constraint firstItem="nCU-2H-93g" firstAttribute="top" secondItem="tEK-is-ef2" secondAttribute="bottom" id="hDj-2U-H58"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="products" id="1ZU-iq-2Sg"/>
+                    <navigationItem key="navigationItem" title="products" id="1ZU-iq-2Sg">
+                        <barButtonItem key="rightBarButtonItem" title="Sort Ascending" id="a1G-vn-gfN">
+                            <connections>
+                                <action selector="sortButtonPressed:" destination="1Tq-RE-YtN" id="q7Z-aG-rgw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="tEK-is-ef2" id="loy-TM-BwA"/>
+                        <outlet property="tableView" destination="nCU-2H-93g" id="Guh-bM-y8W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oD8-rw-BGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
