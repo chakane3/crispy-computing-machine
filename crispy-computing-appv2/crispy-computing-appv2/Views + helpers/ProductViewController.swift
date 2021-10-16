@@ -30,7 +30,7 @@ class ProductViewController: UIViewController {
     var userSelection2: gunTypeState?
     
     // get product data
-    var products = [ammoData]() {
+    var products = [productData]() {
         didSet {
             tableView.reloadData()
         }
@@ -43,14 +43,14 @@ class ProductViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         loadData()
-        dump(res.getAmmo())
+        dump(ammoData.getAmmo())
 
     }
     
     // MARK: - Actions and functions
     
     func loadData() {
-        products = res.getAmmo()
+        products = ammoData.getAmmo()
     }
     
     // TODO:  implement sort by price method

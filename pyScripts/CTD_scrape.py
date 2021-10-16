@@ -90,8 +90,7 @@ def scrape_helper(url):
 
     except:
         print("something went wrong")
-
-def scrape(url, json_save):
+def scrape(url, json_save, gunType):
     
     # get soup object
     page = requests.get(url)
@@ -110,6 +109,9 @@ def scrape(url, json_save):
 
     caliber_links = []
 
+    correspondingTypes = []
+
+
     # get links
     for link in sections:
         caliber_links.append(link.find_all('a')[0]['href'])
@@ -119,6 +121,7 @@ def scrape(url, json_save):
     # collect products from each caliber link
     name_list, price_list, link_list, caliber_list, images_list = [], [], [], [], []
     for caliber in caliber_links['section']:
+   
         
         products = scrape_helper(caliber)
         c = products['caliber']
@@ -130,16 +133,17 @@ def scrape(url, json_save):
         for price in products['price']:
             price_list.append(price)
 
-
         for img in products['imgURL']:
             images_list.append(img)
 
         for link in products['link']:
             link_list.append(link)
+            correspondingTypes.append(gunType)
+
 
     
     for product in range(0, len(name_list)):
-        single_product = {'name': name_list[product], 'price': price_list[product], 'caliber': caliber_list[product], 'link': link_list[product], 'imgURL': images_list[product]}
-        json_save['ammo_results'].append(single_product)
+        single_product = {'name': name_list[product], 'price': price_list[product], 'caliber': caliber_list[product], 'link': link_list[product], 'imgURL': images_list[product], 'type': correspondingTypes[product]}
+        json_save.append(single_product)
     
     return json_save

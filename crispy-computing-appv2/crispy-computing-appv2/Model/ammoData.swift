@@ -7,12 +7,7 @@
 
 import Foundation
 
-struct res: Codable {
-    let results: [ammoData]
-}
-
 struct ammoData: Codable {
-    let type: String
     let ammo_results: [productData]
 }
 
@@ -24,12 +19,12 @@ struct productData: Codable {
     let imgURL: String
 }
 
-extension res {
+extension ammoData {
     // function to parse json data
-    static func getAmmo() -> [ammoData] {
+    static func getAmmo() -> [productData] {
         
         // make an empty variable to hold our ammo data
-        var p = [ammoData]()
+        var p = [productData]()
         
         //get our file using App Bundle (access our in house resources)
         guard let fileURL = Bundle.main.url(forResource: "allAmmo", withExtension: "json") else {
@@ -39,8 +34,8 @@ extension res {
         // access our json file using JSONDecoder
         do {
             let data = try Data(contentsOf: fileURL)
-            let pData = try JSONDecoder().decode(res.self, from: data)
-            p = pData.results
+            let pData = try JSONDecoder().decode(ammoData.self, from: data)
+            p = pData.ammo_results
         } catch {
             fatalError("data not found \(error)")
         }

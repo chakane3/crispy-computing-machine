@@ -15,12 +15,6 @@ def strip_price(price):
     return rtn
 
 def get_image(url):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \
-        (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
-    }
-    
-        
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "lxml")
     img = soup.find_all('div', class_='lSSlideOuter')
@@ -28,13 +22,7 @@ def get_image(url):
         return i.find('li', {'data-src': True})['data-src']
 
 # returns 2 list of http links separated by availability
-def luckyGunner_availability(url):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \
-        (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
-    }
-    
-        
+def luckyGunner_availability(url): 
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "lxml")
     page_body = soup.body
@@ -87,12 +75,7 @@ def luckyGunner_availability(url):
 
 # scrape rifle and handgun
 def scrape(link):
-
     link+="?limit=all"
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 \
-        (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
-    }
     
     page = requests.get(link)
     soup = BeautifulSoup(page.content, "lxml")
@@ -124,14 +107,14 @@ def scrape(link):
     list_of_dicts = []
 
     for product in detailProduct:
-        aDict = {'name': '', 'price': '', 'caliber': '', 'link': '', 'imgURL': ''}
+        aDict = {'name': '', 'price': '', 'caliber': '', 'link': '', 'imgURL': '', 'type': ''}
 
         # scrape names
         name = product.find('a')
         name = name.find('span').text
         aDict['name'] = name
         
-        aDict['imageURL'] = imageURL[imageIndex]
+        aDict['imgURL'] = imageURL[imageIndex]
 
         # scrape prices
         price = product.find('div', class_='price-box')
@@ -161,15 +144,18 @@ def scrape(link):
         list_of_dicts.append(aDict)
     return list_of_dicts
 
-def final_scrape(url, json_save):
+def final_scrape(url, json_save, gunType):
     x = luckyGunner_availability(url)
     ld = []
     for i in x[0]:
         dicts = scrape(i)
+
         for j in dicts:
             ld.append(j)
+            j['type'] = gunType
+
     for i in ld:
-        json_save['ammo_results'].append(i)
+        json_save.append(i)
 
     return json_save
 
