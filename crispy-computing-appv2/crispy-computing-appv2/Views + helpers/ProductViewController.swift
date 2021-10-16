@@ -40,29 +40,47 @@ class ProductViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
         loadData()
+        dump(ammoData.getAmmo())
+
     }
     
     // MARK: - Actions and functions
     
     func loadData() {
-        products = result.getAmmo()
+        products = ammoData.getAmmo()
     }
     
+    // TODO:  implement sort by price method
     @IBAction func sortButtonPressed(_ sender: UIBarButtonItem) {
-        
+    }
+
+}
+
+// MARK: - Extensions: TableView
+extension ProductViewController:  UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return products.count
     }
     
-    func sortData(_ sortAscending: Bool) {
-        if sortAscending {
-            products = products.sorted {$0.ammo_results["price"] < $1.ammo_results["price"] }
-            
+    // create the ui for the cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "productCell") as? CustomTableViewCell else {
+            fatalError("check cell")
         }
-    
+        let product = products[indexPath.row]
+        cell.configureCell(for: product)
+        return cell
     }
+}
+
+extension ProductViewController: UITableViewDelegate {
     
-    
-    
-    
-    
+    // set cell height
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
 }

@@ -14,7 +14,7 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var caliberNameLabel: UILabel!
     
     func configureCell(for product: productData) {
-        productNameLabel.text = product.name
+        productNameLabel.text = product.price
         productPriceLabel.text = product.price
         caliberNameLabel.text = product.caliber
         

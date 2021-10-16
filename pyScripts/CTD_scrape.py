@@ -1,6 +1,6 @@
-import json
-import urllib.request
-import re
+# import json
+# import urllib.request
+# import re
 from bs4 import BeautifulSoup
 from bs4.element import ProcessingInstruction
 from lxml import html
@@ -120,7 +120,6 @@ def scrape(url, json_save):
     name_list, price_list, link_list, caliber_list, images_list = [], [], [], [], []
     for caliber in caliber_links['section']:
         
-
         products = scrape_helper(caliber)
         c = products['caliber']
 
@@ -131,7 +130,6 @@ def scrape(url, json_save):
         for price in products['price']:
             price_list.append(price)
 
-        
 
         for img in products['imgURL']:
             images_list.append(img)
@@ -145,16 +143,3 @@ def scrape(url, json_save):
         json_save['ammo_results'].append(single_product)
     
     return json_save
-
-
-
-# function to help save our data
-def ammo_dict_hg():
-    d = {'type': 'handgun', 'ammo_results': []}
-    return d
-def ammo_dict_rf():
-    d = {'type': 'rifle', 'ammo_results': []}
-    return d
-def ammo_dict_st():
-    d = {'type': 'shotgun', 'ammo_results': []}
-    return d

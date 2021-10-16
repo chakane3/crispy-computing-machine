@@ -4,23 +4,32 @@ import json
 from pathlib import Path
 import os
 import time
-from itertools import chain
 
-
+# function to help save our data
+def ammo_dict_hg():
+    d = {'type': 'handgun', 'ammo_results': []}
+    return d
+def ammo_dict_rf():
+    d = {'type': 'rifle', 'ammo_results': []}
+    return d
+def ammo_dict_st():
+    d = {'type': 'shotgun', 'ammo_results': []}
+    return d
+    
 
 # links 
-hg_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=78&searchBy=Caliber', CTD_scrape.ammo_dict_hg())
-rf_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=79&searchBy=Caliber', CTD_scrape.ammo_dict_rf())
-# st_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=80&searchBy=Gauge', CTD_scrape.ammo_dict_st())
+hg_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=78&searchBy=Caliber', ammo_dict_hg())
+rf_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=79&searchBy=Caliber', ammo_dict_rf())
+st_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=80&searchBy=Gauge', ammo_dict_st())
 
 
-# hg_lg = LG_scrape.final_scrape("https://www.luckygunner.com/handgun", LG_scrape.ammo_dict_hg())
-# rf_lg = LG_scrape.final_scrape("https://www.luckygunner.com/rifle", LG_scrape.ammo_dict_rf())
-# st_lg = LG_scrape.scrape_shotgun("https://www.luckygunner.com/shotgun", LG_scrape.ammo_dict_st())
+hg_lg = LG_scrape.final_scrape("https://www.luckygunner.com/handgun", ammo_dict_hg())
+rf_lg = LG_scrape.final_scrape("https://www.luckygunner.com/rifle", ammo_dict_rf())
+# st_lg = LG_scrape.scrape_shotgun("https://www.luckygunner.com/shotgun", ammo_dict_st())
 
 
 
-js_to_swift = {"results": [hg_ctd, rf_ctd]}
+js_to_swift = {'results': [hg_ctd, rf_ctd, st_ctd, hg_lg, rf_lg]}
     
 
 
