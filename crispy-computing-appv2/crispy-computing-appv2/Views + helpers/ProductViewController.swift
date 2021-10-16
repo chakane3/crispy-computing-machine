@@ -9,7 +9,7 @@ import UIKit
 
 // scopes for our search bar filter
 enum searchScope {
-    case name
+    case type
     case caliber
 }
 
@@ -23,7 +23,7 @@ class ProductViewController: UIViewController {
     private var sortAscending = true
     
     // initialize enum
-    private var currentScope = searchScope.name
+    private var currentScope = searchScope.type
     
     // initialize enum for user product selection
     var userSelection1: ammoOrArmsState?
@@ -37,12 +37,26 @@ class ProductViewController: UIViewController {
     }
     
     // TODO: implement search query
+    var searchQuery = "" {
+        didSet {
+            switch currentScope {
+            case .type:
+                products = ammoData.getAmmo().filter{$0.type.lowercased().contains(searchQuery.lowercased())}
+                
+            case .caliber:
+                products = ammoData.getAmmo().filter{$0.caliber.lowercased().contains(searchQuery.lowercased())}
+            }
+        }
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        searchBar.delegate = self
         loadData()
+        sortData(sortAscending)
         dump(ammoData.getAmmo())
 
     }
@@ -55,6 +69,23 @@ class ProductViewController: UIViewController {
     
     // TODO:  implement sort by price method
     @IBAction func sortButtonPressed(_ sender: UIBarButtonItem) {
+        sortAscending.toggle()
+        sortData(sortAscending)
+    }
+    
+    func sortData(_ sortAscending: Bool) {
+        if sortAscending {
+            products = products.sorted {Double($0.price) ?? 0  < Double($1.price) ?? 0}
+            navigationItem.rightBarButtonItem?.title = "price high to low"
+        } else {
+            products = products.sorted {Double($0.price) ?? 0  > Double($1.price) ?? 0}
+            navigationItem.rightBarButtonItem?.title = "price high to low"
+        }
+    }
+
+    func filterProducts(for searchText: String) {
+        guard !searchText.isEmpty else {return}
+        products = ammoData.getAmmo().filter {$0.type.lowercased().contains(searchText.lowercased())}
     }
 
 }
@@ -83,4 +114,34 @@ extension ProductViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
+}
+
+// MARK: - Extensions Searchbar
+extension ProductViewController: UISearchBarDelegate {
+    
+    // dismiss the keyboard
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard !searchText.isEmpty else {
+            loadData()
+            return
+        }
+        searchQuery = searchText
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        switch selectedScope {
+        case 0:
+            currentScope = .type
+            break
+        case 1: currentScope = .caliber
+            break
+        default:
+            print("not a valid scope")
+        }
+    }
+    
 }
