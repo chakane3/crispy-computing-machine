@@ -42,15 +42,18 @@ class productSelectionViewController: UIViewController {
         switch sender.tag {
         case 0:
             ammoOrArm = ammoOrArmsState.ammo
-            print("ammo selected")
+            us1 = 0
+            print("productSelectionViewController ammo selected")
         case 1:
             ammoOrArm = ammoOrArmsState.arms
-            print("arms selected")
+            us1 = 1
+            print("productSelectionViewController arms selected")
         case 2:
             ammoOrArm = ammoOrArmsState.gear
-            print("gear selected")
+            us1 = 2
+            print("productSelectionViewController gear selected")
         default:
-            print("no tag identifier")
+            print("productSelectionViewController no tag identifier")
         }
     }
     
@@ -58,17 +61,17 @@ class productSelectionViewController: UIViewController {
     @IBAction func gunTypeSelection(_ sender: UIButton) {
         switch sender.tag {
         case 3:
-            gunType = gunTypeState.searchAll
-            print("searchAll selected")
+            us2 = 3
+            print("productSelectionViewController searchAll selected")
         case 4:
-            gunType = gunTypeState.handgun
-            print("handgun selection")
+            us2 = 4
+            print("productSelectionViewController handgun selection")
         case 5:
-            gunType = gunTypeState.rifle
-            print("rifle selection")
+            us2 = 5
+            print("productSelectionViewController rifle selection")
         case 6:
-            gunType = gunTypeState.shotgun
-            print("shotgun selected")
+            us2 = 6
+            print("productSelectionViewController shotgun selected")
         
         default:
             print("no tag identifier")
@@ -79,8 +82,8 @@ class productSelectionViewController: UIViewController {
         guard let pVC = segue.destination as? ProductViewController else {
             return
         }
-        pVC.userSelection1 = ammoOrArm
-        pVC.userSelection2 = gunType
+        pVC.userSelection1 = us1
+        pVC.userSelection2 = us2
     }
 }
 

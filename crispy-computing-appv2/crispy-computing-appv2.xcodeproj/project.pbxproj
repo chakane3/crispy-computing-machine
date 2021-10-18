@@ -19,6 +19,7 @@
 		943E8A5B2714F65A004E70FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943E8A592714F65A004E70FE /* LaunchScreen.storyboard */; };
 		943E8A6B2714FC63004E70FE /* allAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 943E8A6A2714FC63004E70FE /* allAmmo.json */; };
 		943E8A6D2714FFDA004E70FE /* ammoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E8A6C2714FFDA004E70FE /* ammoData.swift */; };
+		94CBFDF4271DE372006E25A1 /* productDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBFDF3271DE372006E25A1 /* productDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		943E8A5C2714F65A004E70FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		943E8A6A2714FC63004E70FE /* allAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = allAmmo.json; sourceTree = "<group>"; };
 		943E8A6C2714FFDA004E70FE /* ammoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ammoData.swift; sourceTree = "<group>"; };
+		94CBFDF3271DE372006E25A1 /* productDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				940374382717AEA000713A78 /* searchBarHelp.swift */,
 				9403743A2717B1D300713A78 /* CustomTableViewCell.swift */,
 				9403743C2717B2E700713A78 /* ImageClient.swift */,
+				94CBFDF3271DE372006E25A1 /* productDetailController.swift */,
 			);
 			path = "Views + helpers";
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				940374372717ABDD00713A78 /* ProductViewController.swift in Sources */,
+				94CBFDF4271DE372006E25A1 /* productDetailController.swift in Sources */,
 				943E8A532714F656004E70FE /* productSelectionViewController.swift in Sources */,
 				943E8A6D2714FFDA004E70FE /* ammoData.swift in Sources */,
 				9403743B2717B1D300713A78 /* CustomTableViewCell.swift in Sources */,

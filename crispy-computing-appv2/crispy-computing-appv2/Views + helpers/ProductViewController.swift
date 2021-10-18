@@ -26,8 +26,8 @@ class ProductViewController: UIViewController {
     private var currentScope = searchScope.name
     
     // initialize enum for user product selection
-    var userSelection1: ammoOrArmsState?
-    var userSelection2: gunTypeState?
+    var userSelection1: Int?
+    var userSelection2: Int?
     
     // get product data
     var products = [productData]() {
@@ -35,16 +35,45 @@ class ProductViewController: UIViewController {
             tableView.reloadData()
         }
     }
+
     
-    // TODO: implement search query
     var searchQuery = "" {
         didSet {
             switch currentScope {
             case .name:
-                products = ammoData.getAllAmmo().filter{$0.name.lowercased().contains(searchQuery.lowercased())}
-                
+                switch userSelection2 {
+                case 3:
+                    products = ammoData.getAllAmmo().filter {$0.name.lowercased().contains(searchQuery.lowercased())}
+                case 4:
+                    let filterProd = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("handgun")}
+                    products = filterProd.filter {$0.name.lowercased().contains(searchQuery.lowercased())}
+                case 5:
+                    let filterProd = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("rifle")}
+                    products = filterProd.filter {$0.name.lowercased().contains(searchQuery.lowercased())}
+                case 6:
+                    let filterProd = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("shotgun")}
+                    products = filterProd.filter {$0.name.lowercased().contains(searchQuery.lowercased())}
+                default:
+                    print("check selection process")
+                }
+
+           
             case .caliber:
-                products = ammoData.getAllAmmo().filter{$0.caliber.lowercased().contains(searchQuery.lowercased())}
+                switch userSelection2 {
+                case 3:
+                    products = ammoData.getAllAmmo().filter {$0.caliber.lowercased().contains(searchQuery.lowercased())}
+                case 4:
+                    let filterProd = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("handgun")}
+                    products = filterProd.filter {$0.caliber.lowercased().contains(searchQuery.lowercased())}
+                case 5:
+                    let filterProd = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("rifle")}
+                    products = filterProd.filter {$0.caliber.lowercased().contains(searchQuery.lowercased())}
+                case 6:
+                    let filterProd = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("shotgun")}
+                    products = filterProd.filter {$0.caliber.lowercased().contains(searchQuery.lowercased())}
+                default:
+                    print("check selection process")
+                }
             }
         }
     }
@@ -57,33 +86,27 @@ class ProductViewController: UIViewController {
         searchBar.delegate = self
         loadData()
         sortData(sortAscending)
-//        dump(ammoData.getAmmo())
-
     }
     
     // MARK: - Actions and functions
     
     func loadData() {
         switch userSelection1 {
-        case .ammo:
-            
+        case 0:
             switch userSelection2 {
-            case .searchAll:
-                print("implement only \(userSelection2!) data")
+            case 3:
                 products = ammoData.getAllAmmo()
-            case .handgun:
-                print("implement only \(userSelection2!) data")
+            case 4:
                 products = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("handgun")}
-            case .rifle:
-                print("implement \(userSelection2!) data")
+            case 5:
                 products = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("rifle")}
-            case .shotgun:
-                print("implement \(userSelection2!) data")
+            case 6:
                 products = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("shotgun")}
+
             default:
                 print("no enum given 2")
             }
-        case .arms:
+        case 1:
             print("not a feature :(")
             
         default:
@@ -109,27 +132,32 @@ class ProductViewController: UIViewController {
 
     func filterProducts(for searchText: String) {
         guard !searchText.isEmpty else {return}
-        switch userSelection1 {
-        case .ammo:
-            switch userSelection2 {
-            case .searchAll:
-                print("implement search all filter")
-                break
-            case .handgun:
-                print("implement handgun filter")
-                break
-            case .rifle:
-                print("implement rifle filter")
-                break
-            case .shotgun:
-                print("implement shotgun filter")
-                break
-            default:
-                print("enum1")
-            }
+        switch userSelection2 {
+        case 3:
+            products = ammoData.getAllAmmo().filter {$0.name.lowercased().contains(searchText.lowercased())}
+            
+        case 4:
+            products = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("handgun")}
+            products = products.filter {$0.name.lowercased().contains(searchText.lowercased())}
+            
+        case 5:
+            products = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("rifle")}
+            products = products.filter {$0.name.lowercased().contains(searchText.lowercased())}
+        
+        case 6:
+            products = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("shotgun")}
+            products = products.filter {$0.name.lowercased().contains(searchText.lowercased())}
         default:
-            print("enum2")
+            print("PVC - filter product error")
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let pVC = segue.destination as? productDetailController, let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("could not retrieve an instance of product detail controller, verify class name in identity inspector")
+        }
+        let product = products[indexPath.row]
+        pVC.product = product
     }
 }
 
