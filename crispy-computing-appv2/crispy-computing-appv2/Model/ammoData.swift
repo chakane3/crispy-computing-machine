@@ -22,7 +22,7 @@ struct productData: Codable {
 
 extension ammoData {
     // function to parse json data
-    static func getAmmo() -> [productData] {
+    static func getAllAmmo() -> [productData] {
         
         // make an empty variable to hold our ammo data
         var p = [productData]()
@@ -42,4 +42,5 @@ extension ammoData {
         }
         return p
     }
+    
 }

@@ -9,7 +9,7 @@ import UIKit
 
 // scopes for our search bar filter
 enum searchScope {
-    case type
+    case name
     case caliber
 }
 
@@ -23,7 +23,7 @@ class ProductViewController: UIViewController {
     private var sortAscending = true
     
     // initialize enum
-    private var currentScope = searchScope.type
+    private var currentScope = searchScope.name
     
     // initialize enum for user product selection
     var userSelection1: ammoOrArmsState?
@@ -40,11 +40,11 @@ class ProductViewController: UIViewController {
     var searchQuery = "" {
         didSet {
             switch currentScope {
-            case .type:
-                products = ammoData.getAmmo().filter{$0.type.lowercased().contains(searchQuery.lowercased())}
+            case .name:
+                products = ammoData.getAllAmmo().filter{$0.name.lowercased().contains(searchQuery.lowercased())}
                 
             case .caliber:
-                products = ammoData.getAmmo().filter{$0.caliber.lowercased().contains(searchQuery.lowercased())}
+                products = ammoData.getAllAmmo().filter{$0.caliber.lowercased().contains(searchQuery.lowercased())}
             }
         }
     }
@@ -57,14 +57,38 @@ class ProductViewController: UIViewController {
         searchBar.delegate = self
         loadData()
         sortData(sortAscending)
-        dump(ammoData.getAmmo())
+//        dump(ammoData.getAmmo())
 
     }
     
     // MARK: - Actions and functions
     
     func loadData() {
-        products = ammoData.getAmmo()
+        switch userSelection1 {
+        case .ammo:
+            
+            switch userSelection2 {
+            case .searchAll:
+                print("implement only \(userSelection2!) data")
+                products = ammoData.getAllAmmo()
+            case .handgun:
+                print("implement only \(userSelection2!) data")
+                products = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("handgun")}
+            case .rifle:
+                print("implement \(userSelection2!) data")
+                products = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("rifle")}
+            case .shotgun:
+                print("implement \(userSelection2!) data")
+                products = ammoData.getAllAmmo().filter {$0.type.lowercased().contains("shotgun")}
+            default:
+                print("no enum given 2")
+            }
+        case .arms:
+            print("not a feature :(")
+            
+        default:
+            print("no enum given 1")
+        }
     }
     
     // TODO:  implement sort by price method
@@ -79,15 +103,34 @@ class ProductViewController: UIViewController {
             navigationItem.rightBarButtonItem?.title = "price high to low"
         } else {
             products = products.sorted {Double($0.price) ?? 0  > Double($1.price) ?? 0}
-            navigationItem.rightBarButtonItem?.title = "price high to low"
+            navigationItem.rightBarButtonItem?.title = "price low to high"
         }
     }
 
     func filterProducts(for searchText: String) {
         guard !searchText.isEmpty else {return}
-        products = ammoData.getAmmo().filter {$0.type.lowercased().contains(searchText.lowercased())}
+        switch userSelection1 {
+        case .ammo:
+            switch userSelection2 {
+            case .searchAll:
+                print("implement search all filter")
+                break
+            case .handgun:
+                print("implement handgun filter")
+                break
+            case .rifle:
+                print("implement rifle filter")
+                break
+            case .shotgun:
+                print("implement shotgun filter")
+                break
+            default:
+                print("enum1")
+            }
+        default:
+            print("enum2")
+        }
     }
-
 }
 
 // MARK: - Extensions: TableView
@@ -112,7 +155,7 @@ extension ProductViewController: UITableViewDelegate {
     
     // set cell height
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 250
     }
 }
 
@@ -135,7 +178,7 @@ extension ProductViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         switch selectedScope {
         case 0:
-            currentScope = .type
+            currentScope = .name
             break
         case 1: currentScope = .caliber
             break
