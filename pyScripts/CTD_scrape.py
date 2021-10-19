@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from bs4.element import ProcessingInstruction
 from lxml import html
 import requests
+import re
 
 # functions to scrape web
 def range_price(url):
@@ -16,6 +17,16 @@ def range_price(url):
     for price in lowend:
         range_p += price['content']
         return range_p
+
+def get_description(url):
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, "lxml")
+    description = soup.find("div", class_="value b3-black content")
+    descriptionSplit = str(description).split("<br>")
+    result = []
+    for i in descriptionSplit:
+        result.append(re.sub('<[^<]+?>', '', i))
+    return result
 
 def get_image(url):
     page = requests.get(url)
@@ -49,7 +60,6 @@ def scrape_helper(url):
     prices = []
     for price in soup_price:
 
-
         # if product has a range of prices, get the detail product link
         if 'span class="range">' in str(price):
             p = price.find('a', {'class': 'link', 'href': True})
@@ -79,17 +89,22 @@ def scrape_helper(url):
     soup_links = soup.find_all('div', class_='pdp-link')
     links = []
     img_url = []
+    descript = []
     for link in soup_links:
         a_link = link.find('a')['href']
         links.append(a_link)
         img_url.append(get_image(a_link))
-    
+        description = get_description(a_link)
+        descript.append(description[0])
+
     try:
-        product = {'name': product_name, 'price': actual_price, 'link': links, 'caliber': caliber.replace('\n\n', '').replace('\n', '').replace('\n\n\n', ''), 'imgURL': img_url}
+        product = {'name': product_name, 'price': actual_price, 'link': links, 'caliber': caliber.replace('\n\n', '').replace('\n', '').replace('\n\n\n', ''), 'imgURL': img_url, 'description': descript}
         return product
 
     except:
         print("something went wrong")
+
+
 def scrape(url, json_save, gunType):
     
     # get soup object
@@ -108,7 +123,6 @@ def scrape(url, json_save, gunType):
             caliber_numbers.append(num['id'])
 
     caliber_links = []
-
     correspondingTypes = []
 
 
@@ -119,7 +133,7 @@ def scrape(url, json_save, gunType):
     caliber_links = {'number': caliber_numbers, 'section': caliber_links}
 
     # collect products from each caliber link
-    name_list, price_list, link_list, caliber_list, images_list = [], [], [], [], []
+    name_list, price_list, link_list, caliber_list, images_list, description = [], [], [], [], [], []
     for caliber in caliber_links['section']:
    
         
@@ -140,10 +154,14 @@ def scrape(url, json_save, gunType):
             link_list.append(link)
             correspondingTypes.append(gunType)
 
+        for summary in products['description']:
+            splitDes = summary.split("\n")
+            description.append(splitDes[1])
 
+ 
     
     for product in range(0, len(name_list)):
-        single_product = {'name': name_list[product], 'price': price_list[product], 'caliber': caliber_list[product], 'link': link_list[product], 'imgURL': images_list[product], 'type': correspondingTypes[product]}
+        single_product = {'name': name_list[product], 'price': price_list[product], 'caliber': caliber_list[product], 'link': link_list[product], 'imgURL': images_list[product], 'type': correspondingTypes[product], 'description': description[product]}
         json_save.append(single_product)
     
     return json_save

@@ -18,8 +18,8 @@ rf_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=79&sear
 st_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=80&searchBy=Gauge', ammo_dict(), "shotgun")
 
 
-hg_lg = LG_scrape.final_scrape("https://www.luckygunner.com/handgun", ammo_dict(), "handgun")
-rf_lg = LG_scrape.final_scrape("https://www.luckygunner.com/rifle", ammo_dict(), "rifle")
+# hg_lg = LG_scrape.final_scrape("https://www.luckygunner.com/handgun", ammo_dict(), "handgun")
+# rf_lg = LG_scrape.final_scrape("https://www.luckygunner.com/rifle", ammo_dict(), "rifle")
 # st_lg = LG_scrape.scrape_shotgun("https://www.luckygunner.com/shotgun", ammo_dict_st())
 
 
@@ -32,11 +32,11 @@ for i in rf_ctd:
     js_to_swift["ammo_results"].append(i)
 for i in st_ctd:
     js_to_swift["ammo_results"].append(i)
-    
-for i in hg_lg:
-    js_to_swift["ammo_results"].append(i)
-for i in rf_lg:
-    js_to_swift["ammo_results"].append(i)
+
+# for i in hg_lg:
+#     js_to_swift["ammo_results"].append(i)
+# for i in rf_lg:
+#     js_to_swift["ammo_results"].append(i)
 
     
 
@@ -60,7 +60,6 @@ def update_json_CTD(hg):
     savePath = str(cwd).replace("pyScripts", rel)
     with open(os.path.join(savePath, f"allAmmo.json"), "w") as fp:
         json.dump(hg, fp)
-
 
 
 update_json_CTD(js_to_swift)

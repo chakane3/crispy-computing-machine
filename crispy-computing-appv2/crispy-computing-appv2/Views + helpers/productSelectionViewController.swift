@@ -28,6 +28,7 @@ class productSelectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        dump(ammoData.getAllAmmo())
     }
     
     // initialize enums

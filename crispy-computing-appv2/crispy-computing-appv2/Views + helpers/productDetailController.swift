@@ -30,6 +30,7 @@ class productDetailController: UIViewController {
         priceLabel.text = "$\(prod.price)"
         linkLabel.text = prod.link
         caliberLabel.text = prod.caliber
+        descriptionLabel.text = prod.description
         
         ImageClient.fetchImage(for: prod.imgURL) {
             [unowned self] (result) in

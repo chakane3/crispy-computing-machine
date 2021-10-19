@@ -18,6 +18,7 @@ struct productData: Codable {
     let link: String
     let imgURL: String
     let type: String
+    let description: String
 }
 
 extension ammoData {

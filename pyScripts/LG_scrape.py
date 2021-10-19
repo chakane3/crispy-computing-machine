@@ -21,6 +21,14 @@ def get_image(url):
     for i in img:
         return i.find('li', {'data-src': True})['data-src']
 
+def get_description(url):
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, "lxml")
+    description = soup.find("div", class_="std")
+    result = (re.sub('<[^<]+?>', '', description))
+    print(result)
+    # return result
+
 # returns 2 list of http links separated by availability
 def luckyGunner_availability(url): 
     page = requests.get(url)
@@ -83,6 +91,7 @@ def scrape(link):
     detailPageLinks = []
     dictLinks = []
     imageURL = []
+    description = []
 
     links = soup.find_all('h3', class_='product-name')
     detailProduct = soup.find_all('div', class_='product-shop')
@@ -92,6 +101,8 @@ def scrape(link):
         detailPageLinks = x['href']
         dictLinks.append(detailPageLinks)
         imageURL.append(get_image(detailPageLinks))
+        get_description(detailPageLinks)
+
 
     names = []
     prices = []
