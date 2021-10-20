@@ -1,5 +1,6 @@
 import CTD_scrape
 import LG_scrape
+import LG_scrape_shotgun_exception
 import json
 from pathlib import Path
 import os
@@ -10,17 +11,15 @@ def ammo_dict():
     d = []
     return d
 
-    
-
 # links 
 hg_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=78&searchBy=Caliber', ammo_dict(), "handgun")
 rf_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=79&searchBy=Caliber', ammo_dict(), "rifle")
 st_ctd = CTD_scrape.scrape('https://www.cheaperthandirt.com/shop-by?cgid=80&searchBy=Gauge', ammo_dict(), "shotgun")
 
 
-# hg_lg = LG_scrape.final_scrape("https://www.luckygunner.com/handgun", ammo_dict(), "handgun")
-# rf_lg = LG_scrape.final_scrape("https://www.luckygunner.com/rifle", ammo_dict(), "rifle")
-# st_lg = LG_scrape.scrape_shotgun("https://www.luckygunner.com/shotgun", ammo_dict_st())
+hg_lg = LG_scrape.final_scrape("https://www.luckygunner.com/handgun", ammo_dict(), "handgun")
+rf_lg = LG_scrape.final_scrape("https://www.luckygunner.com/rifle", ammo_dict(), "rifle")
+st_lg = LG_scrape_shotgun_exception.scrape_shotgun("https://www.luckygunner.com/shotgun", ammo_dict(), "shotgun")
 
 
 
@@ -33,10 +32,12 @@ for i in rf_ctd:
 for i in st_ctd:
     js_to_swift["ammo_results"].append(i)
 
-# for i in hg_lg:
-#     js_to_swift["ammo_results"].append(i)
-# for i in rf_lg:
-#     js_to_swift["ammo_results"].append(i)
+for i in hg_lg:
+    js_to_swift["ammo_results"].append(i)
+for i in rf_lg:
+    js_to_swift["ammo_results"].append(i)
+for i in st_lg:
+    js_to_swift['ammo_results'].append(i)
 
     
 

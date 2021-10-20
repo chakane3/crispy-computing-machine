@@ -24,10 +24,9 @@ def get_image(url):
 def get_description(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "lxml")
-    description = soup.find("div", class_="std")
-    result = (re.sub('<[^<]+?>', '', description))
-    print(result)
-    # return result
+    description = soup.find("div", class_="col-2 product-section-details collapse")
+    result = (re.sub('<[^<]+?>', '', description.text))
+    return result
 
 # returns 2 list of http links separated by availability
 def luckyGunner_availability(url): 
@@ -101,10 +100,9 @@ def scrape(link):
         detailPageLinks = x['href']
         dictLinks.append(detailPageLinks)
         imageURL.append(get_image(detailPageLinks))
-        get_description(detailPageLinks)
+        description.append(get_description(detailPageLinks))
 
 
-    names = []
     prices = []
     calibers = []
 
@@ -114,18 +112,17 @@ def scrape(link):
         print(link)
 
     linkIndex = 0 
-    imageIndex = 0
     list_of_dicts = []
 
     for product in detailProduct:
-        aDict = {'name': '', 'price': '', 'caliber': '', 'link': '', 'imgURL': '', 'type': ''}
+        aDict = {'name': '', 'price': '', 'caliber': '', 'link': '', 'imgURL': '', 'type': '', 'description': ''}
 
         # scrape names
         name = product.find('a')
         name = name.find('span').text
         aDict['name'] = name
         
-        aDict['imgURL'] = imageURL[imageIndex]
+        aDict['imgURL'] = imageURL[linkIndex]
 
         # scrape prices
         price = product.find('div', class_='price-box')
@@ -145,8 +142,9 @@ def scrape(link):
                     aDict['price'] = "out of stock"
 
         aDict['link'] = dictLinks[linkIndex]
+        aDict['description'] = description[linkIndex].strip("\n")
         linkIndex += 1
-        imageIndex+=1
+
         try:
             aDict['caliber'] = calibers[0].replace('\n', '')
         except:

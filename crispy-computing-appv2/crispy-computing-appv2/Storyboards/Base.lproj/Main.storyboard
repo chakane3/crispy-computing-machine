@@ -302,7 +302,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="products" id="1ZU-iq-2Sg">
-                        <barButtonItem key="rightBarButtonItem" title="Sort Ascending" id="a1G-vn-gfN">
+                        <barButtonItem key="rightBarButtonItem" title="sort ascending" id="a1G-vn-gfN">
                             <connections>
                                 <action selector="sortButtonPressed:" destination="1Tq-RE-YtN" id="q7Z-aG-rgw"/>
                             </connections>
@@ -335,14 +335,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="caliber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BB-Qs-0Wn">
                                 <rect key="frame" x="20" y="841" width="169" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVL-VR-kJo">
                                 <rect key="frame" x="273" y="841" width="123" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -371,7 +371,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3N-AL-ttV">
                                 <rect key="frame" x="20" y="506" width="374" height="327"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -392,7 +392,9 @@
                             <constraint firstItem="3jg-lp-5fU" firstAttribute="top" secondItem="YVF-h6-ohi" secondAttribute="bottom" constant="8" id="mSQ-Q9-kbh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mWv-1w-zTk"/>
+                    <navigationItem key="navigationItem" id="mWv-1w-zTk">
+                        <barButtonItem key="rightBarButtonItem" title="save product" id="PjF-VH-0ps"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="caliberLabel" destination="6BB-Qs-0Wn" id="gmk-Ia-7TM"/>
                         <outlet property="descriptionLabel" destination="J3N-AL-ttV" id="rbF-Gs-gPW"/>
