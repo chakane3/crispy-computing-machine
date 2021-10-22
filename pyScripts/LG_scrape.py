@@ -139,7 +139,7 @@ def scrape(link):
                     aDict['price'] = strip_price(price.text)
                 except:
                     prices.append("NOPE")
-                    aDict['price'] = "out of stock"
+                    aDict['price'] = "0.00"
 
         aDict['link'] = dictLinks[linkIndex]
         aDict['description'] = description[linkIndex].strip("\n")

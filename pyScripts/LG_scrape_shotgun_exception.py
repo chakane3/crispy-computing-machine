@@ -62,7 +62,7 @@ def scrape_shotgun_helper(url, gunType):
                     productPrice = price.find('span', class_='regular-price')
                     aDict['price'] = strip_price(productPrice.text)
             else:
-                aDict['price'] = 'out of stock'
+                aDict['price'] = '0.00'
             list_of_dicts.append(aDict)
     return list_of_dicts
 

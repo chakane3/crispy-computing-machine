@@ -1,6 +1,7 @@
 import CTD_scrape
 import LG_scrape
 import LG_scrape_shotgun_exception
+# import Optics_Planet
 import json
 from pathlib import Path
 import os
@@ -21,6 +22,7 @@ hg_lg = LG_scrape.final_scrape("https://www.luckygunner.com/handgun", ammo_dict(
 rf_lg = LG_scrape.final_scrape("https://www.luckygunner.com/rifle", ammo_dict(), "rifle")
 st_lg = LG_scrape_shotgun_exception.scrape_shotgun("https://www.luckygunner.com/shotgun", ammo_dict(), "shotgun")
 
+# hg_op = Optics_Planet.scrape_handgun("https://www.opticsplanet.com/handgun-ammo.html?_iv_gridSize=240")
 
 
 # add data to json
