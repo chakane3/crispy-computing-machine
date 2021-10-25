@@ -16,22 +16,21 @@ class CustomTableViewCell: UITableViewCell {
     
     func configureCell(for product: productData) {
         productNameLabel.text = product.name
-        productPriceLabel.text = product.price
+        productPriceLabel.text = "$\(product.price)"
         caliberNameLabel.text = product.caliber
         gunTypeLabel.text = product.type
         
-        // use ImageClient to grab product photo
-        ImageClient.fetchImage(for: product.imgURL) {
-            [unowned self] (result) in
-            
+        // use closure to grab product photo
+        productImage.setImage(with: product.imgURL) {(result) in
             switch result {
-            case .success((let image)):
+            case .failure:
+                DispatchQueue.main.async {
+                    self.productImage.image = UIImage(systemName: "person fill")
+                }
+            case .success(let image):
                 DispatchQueue.main.async {
                     self.productImage.image = image
                 }
-                
-            case .failure(let error):
-                print("configureCell image error - \(error)")
             }
         }
     }

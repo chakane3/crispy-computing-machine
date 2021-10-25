@@ -10,7 +10,7 @@
 		940374372717ABDD00713A78 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940374362717ABDD00713A78 /* ProductViewController.swift */; };
 		940374392717AEA000713A78 /* searchBarHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940374382717AEA000713A78 /* searchBarHelp.swift */; };
 		9403743B2717B1D300713A78 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9403743A2717B1D300713A78 /* CustomTableViewCell.swift */; };
-		9403743D2717B2E700713A78 /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9403743C2717B2E700713A78 /* ImageClient.swift */; };
+		9403743D2717B2E700713A78 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9403743C2717B2E700713A78 /* UIImageViewExtension.swift */; };
 		943E8A4F2714F656004E70FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E8A4E2714F656004E70FE /* AppDelegate.swift */; };
 		943E8A512714F656004E70FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E8A502714F656004E70FE /* SceneDelegate.swift */; };
 		943E8A532714F656004E70FE /* productSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E8A522714F656004E70FE /* productSelectionViewController.swift */; };
@@ -19,6 +19,8 @@
 		943E8A5B2714F65A004E70FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943E8A592714F65A004E70FE /* LaunchScreen.storyboard */; };
 		943E8A6B2714FC63004E70FE /* allAmmo.json in Resources */ = {isa = PBXBuildFile; fileRef = 943E8A6A2714FC63004E70FE /* allAmmo.json */; };
 		943E8A6D2714FFDA004E70FE /* ammoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E8A6C2714FFDA004E70FE /* ammoData.swift */; };
+		94A2069D27264A8B008B2B10 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A2069C27264A8B008B2B10 /* AppError.swift */; };
+		94A2069F27264CF9008B2B10 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A2069E27264CF9008B2B10 /* NetworkHelper.swift */; };
 		94CBFDF4271DE372006E25A1 /* productDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBFDF3271DE372006E25A1 /* productDetailController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +28,7 @@
 		940374362717ABDD00713A78 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		940374382717AEA000713A78 /* searchBarHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBarHelp.swift; sourceTree = "<group>"; };
 		9403743A2717B1D300713A78 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		9403743C2717B2E700713A78 /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
+		9403743C2717B2E700713A78 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		943E8A4B2714F656004E70FE /* crispy-computing-appv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crispy-computing-appv2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		943E8A4E2714F656004E70FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		943E8A502714F656004E70FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,8 @@
 		943E8A5C2714F65A004E70FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		943E8A6A2714FC63004E70FE /* allAmmo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = allAmmo.json; sourceTree = "<group>"; };
 		943E8A6C2714FFDA004E70FE /* ammoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ammoData.swift; sourceTree = "<group>"; };
+		94A2069C27264A8B008B2B10 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		94A2069E27264CF9008B2B10 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		94CBFDF3271DE372006E25A1 /* productDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,9 +74,10 @@
 		943E8A4D2714F656004E70FE /* crispy-computing-appv2 */ = {
 			isa = PBXGroup;
 			children = (
+				94A2069B2726494D008B2B10 /* Helpers */,
 				943E8A662714F747004E70FE /* jsonFiles */,
 				943E8A652714F729004E70FE /* Model */,
-				943E8A642714F718004E70FE /* Views + helpers */,
+				943E8A642714F718004E70FE /* Views */,
 				943E8A632714F6FD004E70FE /* Storyboards */,
 				943E8A622714F6E8004E70FE /* Supporting files */,
 				943E8A5C2714F65A004E70FE /* Info.plist */,
@@ -99,23 +104,24 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		943E8A642714F718004E70FE /* Views + helpers */ = {
+		943E8A642714F718004E70FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				943E8A522714F656004E70FE /* productSelectionViewController.swift */,
 				940374362717ABDD00713A78 /* ProductViewController.swift */,
 				940374382717AEA000713A78 /* searchBarHelp.swift */,
 				9403743A2717B1D300713A78 /* CustomTableViewCell.swift */,
-				9403743C2717B2E700713A78 /* ImageClient.swift */,
 				94CBFDF3271DE372006E25A1 /* productDetailController.swift */,
 			);
-			path = "Views + helpers";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		943E8A652714F729004E70FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				943E8A6C2714FFDA004E70FE /* ammoData.swift */,
+				9403743C2717B2E700713A78 /* UIImageViewExtension.swift */,
+				94A2069C27264A8B008B2B10 /* AppError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +140,14 @@
 				943E8A6A2714FC63004E70FE /* allAmmo.json */,
 			);
 			path = ammo;
+			sourceTree = "<group>";
+		};
+		94A2069B2726494D008B2B10 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				94A2069E27264CF9008B2B10 /* NetworkHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,12 +224,14 @@
 			files = (
 				940374372717ABDD00713A78 /* ProductViewController.swift in Sources */,
 				94CBFDF4271DE372006E25A1 /* productDetailController.swift in Sources */,
+				94A2069D27264A8B008B2B10 /* AppError.swift in Sources */,
 				943E8A532714F656004E70FE /* productSelectionViewController.swift in Sources */,
+				94A2069F27264CF9008B2B10 /* NetworkHelper.swift in Sources */,
 				943E8A6D2714FFDA004E70FE /* ammoData.swift in Sources */,
 				9403743B2717B1D300713A78 /* CustomTableViewCell.swift in Sources */,
 				943E8A4F2714F656004E70FE /* AppDelegate.swift in Sources */,
 				940374392717AEA000713A78 /* searchBarHelp.swift in Sources */,
-				9403743D2717B2E700713A78 /* ImageClient.swift in Sources */,
+				9403743D2717B2E700713A78 /* UIImageViewExtension.swift in Sources */,
 				943E8A512714F656004E70FE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
