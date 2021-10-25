@@ -1,0 +1,133 @@
+Firebase is a BaaS usually used for authentification, database needs
+This particular app needs a user to login to generate information, we also need a stockpile of data
+
+
+Sites to scrape:
+
+1.) https://palmettostatearmory.com/ammo.html?avad=194130_a229dc669&utm_source=Avantlink&utm_medium=Referral&utm_campaign=el
+    ***needs JS to bypass security 
+
+2.) https://www.brownells.com/ammunition/index.htm?avad=194130_c229dc23d&aid=155690&cm_mmc=affiliate-_-Itwine-_-Avantlink-_-Custom+Link&utm_medium=affiliate&utm_source=Avantlink&utm_content=NA&utm_campaign=Itwine
+    ***keep data collection the same as the other json files
+3.) https://www.cabelas.com/shop/en/ammunition?lcab.rdr=TRUE&irclickid=1tHy1rWePxyOWaM05-R4sULoUkB3k%3AXxsSUk2k0&irpid=227925&irmpname=Pew%20Pew%20Media%2C%20Inc.&sharedid=&irgwc=1&WT.mc_id=ir227925&WT.tsrc=AFF&cm_soc=AFF
+
+4.) https://www.sportsmansguide.com/?avad=194130_c229dc355&AL=1&alaffilid=155690&utm_source=Affiliate&utm_medium=AL&utm_campaign=155690
+
+5.) https://www.opticsplanet.com/9mm-luger-ammo.html?sscid=71k5_111pl&utm_source=shareasale&utm_medium=affiliate&utm_campaign=affiliate-2653825
+
+6.) https://www.ammunitiondepot.com/534-bulk-ammo
+
+7.) https://www.freedommunitions.com/ammunition.html
+
+8.) https://www.fleetfarm.com/category/hunting/ammunition/_/N-931964591
+
+
+
+
+***********8
+merge json data into one single file
+
+
+CTD json
+{
+    
+    "type": "handgun", 
+    "ammo_results": [
+        {
+            "name": "Sellier & Bellot 10mm Auto Ammunition 50 Rounds 180 Grain Full Metal Jacket 1164...", 
+            "price": "34.89", 
+            "caliber": "10mm Automatic", 
+            "link": "https://www.cheaperthandirt.com/sellier-and-bellot-10mm-auto-ammunition-50-rounds-180-grain-full-metal-jacket-1164fps/FC-754908500918.html", 
+            "imgURL": "https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwe50a8c2d/large/07963.jpg?sw=800&sh=800"
+        }
+}
+
+LG json
+{
+    "type": "handgun", 
+    "ammo_results": [
+        {
+            "name": "32 ACP - 71 Grain FMJ - PMC - 50 Rounds", 
+            "prices": "40.00", 
+            "links": "https://www.luckygunner.com/32-auto-71-gr-fmj-pmc-50-rounds", 
+            "caliber": "32 ACP Ammo", 
+            "imageUrl": "https://cdn-secure.luckygunner.com/media/catalog/product/cache/1/image/1036x1036/eb6f4b3ae1db897855c071b7a6b629b0/3/2/32844eadbaac8534f3a2a2a8105deed6.jpg"
+        }
+}
+***********8
+
+
+
+aggregated json files
+
+{
+	"results": 
+	[{
+			"type": "handgun",
+			"ammo_results": [{
+				"name": "Sellier & Bellot 10mm Auto Ammunition 50 Rounds 180 Grain Full Metal Jacket 1164...",
+				"price": "29.89",
+				"caliber": "10mm Automatic",
+				"link": "https://www.cheaperthandirt.com/sellier-and-bellot-10mm-auto-ammunition-50-rounds-180-grain-full-metal-jacket-1164fps/FC-754908500918.html",
+				"imgURL": "https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwe50a8c2d/large/07963.jpg?sw=800&sh=800"
+			}, {
+				"name": "Buffalo Bore Tactical 10mm Auto Ammunition 20 Rounds FMJ FN 180 Grain 21G/20",
+				"price": "34.89",
+				"caliber": "10mm Automatic",
+				"link": "https://www.cheaperthandirt.com/buffalo-bore-tactical-10mm-auto-ammunition-20-rounds-fmj-fn-180-grain-21g20/FC-651815021072.html",
+				"imgURL": "https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwaf43da0a/large/9-300545.jpg?sw=800&sh=800"
+			},  {
+			"name": "Aguila 9mm Ammunition 50 Rounds FMJ 115 Grain",
+			"price": "44.89",
+			"caliber": "9mm / Luger / Parabellum",
+			"link": "https://www.cheaperthandirt.com/aguila-9mm-ammunition-50-rounds-fmj-115-grain/FC-AMM-190-012.html",
+			"imgURL": "https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw7656ecfb/large/114933.jpg?sw=800&sh=800"
+		}]
+	}, 
+	{
+			"type": "rifle",
+			"ammo_results": [{
+				"name": "American Quality .22-250 Remington Ammunition 250 Rounds Hornady V-Max 55 Grains...",
+				"price": "299.89",
+				"caliber": ".22-250 Remington",
+				"link": "https://www.cheaperthandirt.com/american-quality-.22-250-remington-ammunition-250-rounds-hornady-v-max-55-grains-f-n22250vp250/FC-04806015501480.html",
+				"imgURL": "https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw6f5bacc7/large/amm-2890.jpg?sw=800&sh=800"
+			}, {
+				"name": "250 Rounds of American Quality .300 Blackout Ammunition Bulk Pack FMJ 147 Grains...",
+				"price": "199.89",
+				"caliber": ".300 AAC Blackout",
+				"link": "https://www.cheaperthandirt.com/250-rounds-of-american-quality-.300-blackout-ammunition-bulk-pack-fmj-147-grains-n300147vp250/FC-04806015501886.html",
+				"imgURL": "https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwc99cf404/large/amm-3008.jpg?sw=800&sh=800"
+			}]
+	}]
+}
+
+
+
+https://www.opticsplanet.com/handgun-ammo.html?_iv_gridSize=240
+
+// added page=2
+https://www.opticsplanet.com/handgun-ammo.html?_iv_page=2&_iv_gridSize=240
+
+check if a data-page number exists for next set of products
+<button class="e-pagination__btn e-pagination__btn_next op-plugin op-widget-initialized" 
+	data-page-number="3" 
+	data-plugins="op.widgets.GridScrollTo" 
+	data-plugins-options="{"elementEvents":["click"]}">
+
+
+
+json_obj = r.json()
+
+for ord in json_obj:
+    print("id:", ord["order"]["id"])
+    print("status_id:", ord["order"]["status_order_id"])
+    print('---')
+    cursor.execute("INSERT INTO table_test (id, status_order_id, customer_id) VALUES (%s,%s,%s)", (ord["order"]["id"], ord["order"]["status_order_id"], ord["order"]["customer_id"]))
+
+#close the connection to the database.
+mydb.commit()
+cursor.close()
+
+
+
