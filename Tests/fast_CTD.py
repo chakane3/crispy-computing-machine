@@ -30,55 +30,31 @@ def scrape_old(url):
         for urls_for_caliber in link.find_all('a'):
             caliber_links.append(str(re.findall('(?P<url>https?://[^\s]+)', str(urls_for_caliber))).replace('"', "").replace(";W","").replace(">", "").replace("[", "").replace("]", "").replace("'", ""))
 
-    print(caliber_links)
+    # print(caliber_links)
         
-            
-        
-
-"""
-cube_numbers = []
-for n in range(0, 10):
-    if n % 2 == 1:
-        cube_numbers.append(n**3)
-
-this code can actually just be:
-cube_numbers  = [n**3 for n in range(1, 10) if n%2 == 1]
-[appendThis for n in arr expression]
-
-
-if you want to implement multiple loops in a comprehension list
-the outermost loop goes first and work your way in
-result = []
-
-for tag in tags:
-    for entry in entries:
-        if tag in entry:
-            result.extend(entry)
-[entry for tag in tags for entry in entries if tag in entry]
-
-"""
 def scrape(url):
     
     # get soup object
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'lxml')
 
-    # returns an array of products from our caliber list
-    sections = soup.find_all('div', class_='brand-link-list') 
-
-    """
-    caliber_links = []
-    correspondingTypes = []
-    # get links
-    for link in sections:
-        for urls_for_caliber in link.find_all('a'):
-            caliber_links.append(str(re.findall('(?P<url>https?://[^\s]+)', str(urls_for_caliber))).replace('"', "").replace(";W","").replace(">", "").replace("[", "").replace("]", "").replace("'", ""))
-    """
-    # get caliber number set
+    # grab links for each caliber
     caliber_numbers = []
     soup_caliber = soup.find_all('div', class_='refinements')
     caliber_numbers = [num for caliber in soup_caliber for num in caliber.find_all('div', {'id': True}) ]
-    caliber_links = []
+    caliber_links_html = [i.find_all('a') for i in caliber_numbers]
+    caliber_links_str = [str(re.findall('(?P<url>https?://[^\s]+)', str(j))).replace('"', "").replace(">", "").replace("'","").replace("[", "").replace("]", "") for j in caliber_links_html]
+    caliber_links_arr = [i.split(", ") for i in caliber_links_str]
+    calibers_urls = [link for arr in caliber_links_arr for link in arr]
+    
+    # for i in caliber_numbers:
+    #     links = i.find_all('a')
+    #     for j in links: 
+    #         caliber_links.append(str(re.findall('(?P<url>https?://[^\s]+)', str(j))).replace('"', "").replace(">", "").replace("'","").replace("[", "").replace("]", ""))
+    
+    
+           
+        
 
 
 start_time = time.time()
